@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { projects } from "../constants";
-import arrowRight from "../assets/icons/arrow.svg";
+import arrowRight from "../assets/images/go-dutch1.png";
 import CTA from "../components/CTA";
 import { FaGithub } from "react-icons/fa";
 import { FaLink } from "react-icons/fa";
@@ -35,6 +35,7 @@ const Projects = () => {
                 {project.name}
               </h4>
               <p className="mt-2 text-slate-500">{project.description}</p>
+
               <div className="mt-1 flex items-center gap-2 font-poppins">
                 <div className="flex">
                   <div className="flex items-center mr-2">

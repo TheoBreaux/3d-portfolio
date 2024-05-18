@@ -45,7 +45,7 @@ export const projects = [
     name: "Go Dutch!",
     description:
       "Go Dutch! is an interactive, collaborative dining bill-splitting, mobile application that streamlines the process of dividing restaurant expenses among friends. Go Dutch! seamlessly parses receipts, adds diners, and distributes costs effortlessly. The intuitive interface offers special features like birthday bill-sharing and payment notification requests. Elevate your dining experience and impress your friends with our professional-grade app!",
-    link: "https://demo-go-dutch.vercel.app",
+    link: "https://theodorebreaux.com/godutch.html",
     gitHubLink: "https://github.com/TheoBreaux/go-dutch-react-native",
   },
   {
@@ -80,33 +80,25 @@ export const education = [
     location: "Remote",
     certification:
       "Bachelor of Science in Software Engineering (Expected 2024)",
-    points: [
-      
-    ],
+    points: [],
   },
   {
     institution: "Lake Forest College ",
     location: "Lake Forest, IL",
     certification: "Bachelor of Arts in Marketing/Advertising",
-    points: [
-     
-    ],
+    points: [],
   },
 
   {
     institution: "Per Scholas",
     location: "Remote",
     certification: "React Developer Certification",
-    points: [
-     
-    ],
+    points: [],
   },
   {
     institution: "Google/Coursera",
     location: "Remote",
     certification: "Google Data Analytics Specialization",
-    points: [
-    
-    ],
+    points: [],
   },
 ];

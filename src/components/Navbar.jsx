@@ -34,14 +34,14 @@ const Navbar = () => {
         >
           Projects
         </NavLink>
-        <NavLink
-          to="/marketing"
+        {/* <NavLink
+          to="/experience"
           className={({ isActive }) =>
             isActive ? "text-blue-500" : "text-black"
           }
         >
-          Marketing
-        </NavLink>
+          Experience
+        </NavLink> */}
 
         {/* <NavLink
           to="/education"

@@ -1,5 +1,27 @@
 export const experiences = [
   {
+    title: "Mobile Application Developer",
+    company_name: "AthletesTogether",
+    date: "July 2024 - Present",
+    points: [
+      "Collaborate with team to plan and execute sprints, ensuring timely completion of development milestones",
+      "Generate innovative ideas and provide input across various business phases, including engineering, sales, design, and overall business strategy",
+      "Assist with documentation and compliance tasks, ensuring all development activities meet regulatory and organizational requirements",
+    ],
+  },
+  {
+    title: "Software Engineer",
+    company_name: "Blindsheep Digital",
+    date: "May 2024 - Present",
+    points: [
+      "Design, develop and maintain responsive and user-friendly websites using WordPress, leveraging themes and custom plugins to meet client requirements and enhance user experience",
+      "Develop and maintained custom WordPress templates with HTML for various page layouts, ensuring consistency across the website",
+      "Integrate HTML code into WordPress to create and modify page elements, such as headers, footers, navigation menus, and widgets",
+
+      ,
+    ],
+  },
+  {
     title: "Software Engineer",
     company_name: "Go Dutch!",
     date: "Oct 2022 - Present",

@@ -1,5 +1,5 @@
-import { NavLink } from "react-router-dom";
-import { IoHome } from "react-icons/io5";
+import { NavLink } from 'react-router-dom';
+import { IoHome } from 'react-icons/io5';
 
 const Navbar = () => {
   return (
@@ -21,7 +21,7 @@ const Navbar = () => {
         <NavLink
           to="/about"
           className={({ isActive }) =>
-            isActive ? "text-blue-500" : "text-black"
+            isActive ? 'text-blue-500' : 'text-black'
           }
         >
           About
@@ -29,7 +29,7 @@ const Navbar = () => {
         <NavLink
           to="/projects"
           className={({ isActive }) =>
-            isActive ? "text-blue-500" : "text-black"
+            isActive ? 'text-blue-500' : 'text-black'
           }
         >
           Projects
@@ -37,24 +37,24 @@ const Navbar = () => {
         <NavLink
           to="/marketing"
           className={({ isActive }) =>
-            isActive ? "text-blue-500" : "text-black"
+            isActive ? 'text-blue-500' : 'text-black'
           }
         >
           Marketing
         </NavLink>
 
-        {/* <NavLink
-          to="/education"
+        <NavLink
+          to="/acting"
           className={({ isActive }) =>
-            isActive ? "text-blue-500" : "text-black"
+            isActive ? 'text-blue-500' : 'text-black'
           }
         >
-          Education
-        </NavLink> */}
+          Acting
+        </NavLink>
         <NavLink
           to="/contact"
           className={({ isActive }) =>
-            isActive ? "text-blue-500" : "text-black"
+            isActive ? 'text-blue-500' : 'text-black'
           }
         >
           Contact

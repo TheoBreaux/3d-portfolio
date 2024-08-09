@@ -1,5 +1,5 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
 import {
   Home,
   About,
@@ -7,9 +7,11 @@ import {
   Education,
   Contact,
   EmailMarketing,
-} from "./pages";
-import ImagePage from "./components/ImagePage";
-import ScrollToTop from "./components/ScrollToTop";
+  GoDutch,
+  Acting,
+} from './pages';
+import ImagePage from './components/ImagePage';
+import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
   return (
@@ -19,13 +21,42 @@ const App = () => {
           <Navbar />
           <ScrollToTop />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/marketing" element={<EmailMarketing />} />
-            <Route path="/education" element={<Education />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/image/:imageName" element={<ImagePage />} />
+            <Route
+              path="/"
+              element={<Home />}
+            />
+            <Route
+              path="/about"
+              element={<About />}
+            />
+            <Route
+              path="/projects"
+              element={<Projects />}
+            />
+            <Route
+              path="/marketing"
+              element={<EmailMarketing />}
+            />
+            <Route
+              path="/godutch"
+              element={<GoDutch />}
+            />
+            <Route
+              path="/education"
+              element={<Education />}
+            />
+            <Route
+              path="/acting"
+              element={<Acting />}
+            />
+            <Route
+              path="/contact"
+              element={<Contact />}
+            />
+            <Route
+              path="/image/:imageName"
+              element={<ImagePage />}
+            />
           </Routes>
         </Router>
       </main>

@@ -1,6 +1,6 @@
-import { images } from "../pages/index.js";
-import CTA from "../components/CTA";
-import { useNavigate } from "react-router-dom";
+import { images } from '../pages/index.js';
+import CTA from '../components/CTA';
+import { useNavigate } from 'react-router-dom';
 
 const EmailMarketing = () => {
   const navigate = useNavigate();
@@ -12,7 +12,7 @@ const EmailMarketing = () => {
   return (
     <section className="max-container">
       <h1 className="head-text">
-        Email{" "}
+        Email{' '}
         <span className="blue-gradient_text font-semibold drop-shadow">
           Marketing Portfolio
         </span>
@@ -32,14 +32,17 @@ const EmailMarketing = () => {
 
       <div className="py-10 flex flex-col">
         <h3 className="subhead-text">
-          My{" "}
+          My{' '}
           <span className="blue-gradient_text font-semibold drop-shadow">
             Campaigns
           </span>
         </h3>
         <div className="mt-16 flex flex-wrap gap-12">
           {Object.keys(images).map((imageName) => (
-            <div key={imageName} className="w-1/1 p-2">
+            <div
+              key={imageName}
+              className="w-1/1 p-2"
+            >
               <img
                 src={images[imageName]}
                 className="w-full h-auto object-cover rounded-lg cursor-pointer"

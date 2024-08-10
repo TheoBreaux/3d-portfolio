@@ -23,7 +23,7 @@ const App = () => {
           <Routes>
             <Route
               path="/"
-              element={<GoDutch />}
+              element={<Home />}
             />
             <Route
               path="/about"

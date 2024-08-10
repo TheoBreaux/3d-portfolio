@@ -43,14 +43,14 @@ const Navbar = () => {
           Marketing
         </NavLink>
 
-        <NavLink
+        {/* <NavLink
           to="/acting"
           className={({ isActive }) =>
             isActive ? 'text-blue-500' : 'text-black'
           }
         >
           Acting
-        </NavLink>
+        </NavLink> */}
         <NavLink
           to="/contact"
           className={({ isActive }) =>

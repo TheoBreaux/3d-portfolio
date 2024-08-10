@@ -15,7 +15,7 @@ const Navbar = () => {
       </div>
 
       <div>
-        <nav className="flex text-lg gap-7 font-medium">
+        <nav className="flex text-lg gap-6 font-medium">
           {['/about', '/projects', '/marketing', '/acting', '/contact'].map(
             (path) => (
               <NavLink
@@ -42,8 +42,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
 
 // import { NavLink } from 'react-router-dom';
 

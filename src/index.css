@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
 
 @tailwind base;
 @tailwind components;
@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
 }
 
 body:has(.card[data-color='blue']:hover) {
@@ -27,11 +27,11 @@ body:has(.card[data-color='green']:hover) {
   }
 
   .head-text {
-    @apply sm:text-5xl text-3xl font-semibold sm:leading-snug font-poppins;
+    @apply sm:text-5xl text-3xl font-semibold sm:leading-snug;
   }
 
   .subhead-text {
-    @apply font-semibold sm:text-3xl text-xl relative font-poppins;
+    @apply font-semibold sm:text-3xl text-xl relative;
   }
 
   .blue-gradient_text {
@@ -174,27 +174,14 @@ body:has(.card[data-color='green']:hover) {
   text-align: center; */
 }
 
-.header {
+.go-dutch-header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.video-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.video-container iframe {
-  width: 1000px;
-  height: 600px;
-  max-width: 100%;
-  max-height: 100%;
+  margin-top: 60px;
+  /* justify-content: center; */
+  /* width: 100%; */
+  /* margin: 0 auto; */
 }
 
 .about-container {
@@ -293,6 +280,13 @@ body:has(.card[data-color='green']:hover) {
   margin: 20px;
 }
 
+.go-dutch-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
 .features-title {
   color: black;
   margin-top: 0;
@@ -311,6 +305,19 @@ body:has(.card[data-color='green']:hover) {
 .screens {
   width: 45%;
   height: auto;
+}
+
+/* VIDEO PLAYER STYLES */
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0 20px 0;
+}
+
+.video-player {
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -349,6 +356,9 @@ body:has(.card[data-color='green']:hover) {
 
   .go-dutch-image-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
   }
 
   .location-features-container {

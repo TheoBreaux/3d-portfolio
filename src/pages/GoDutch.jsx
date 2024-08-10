@@ -11,11 +11,12 @@ import FavoriteRestaurantsScreen from '../assets/images/favorite-restaurants-scr
 import ViewUserProfileScreen from '../assets/images/view-user-profile-screen.png';
 import GoDutchLogo from '../assets/images/go-dutch-icon.png';
 import ReceiptCaptureImage from '../assets/images/receipt-capture-image.png';
+import video from '../assets/videos/go-dutch-demo-video.mp4';
 
 const GoDutch = () => {
   return (
     <div className="app">
-      <div className="header">
+      <div className="go-dutch-header">
         <img
           className="text-logo"
           src={GoDutchTextLogo}
@@ -23,13 +24,13 @@ const GoDutch = () => {
         />
 
         <div className="video-container">
-          <iframe
-            src="https://www.youtube.com/embed/DkCAYYEwTSY?si=V5WmMuloGL9IQZw5"
-            title="Go Dutch!"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          />
+          <video
+            controls
+            autoPlay
+            width="90%"
+            className="video-player"
+            src={video}
+          ></video>
         </div>
       </div>
 
@@ -50,6 +51,7 @@ const GoDutch = () => {
           pick up a portion of Jessica's five expresso martinis when you go to
           split the bill?
         </p>
+        <br />
         <p className="about-text">
           Enter<span className="title"> Go Dutch!</span>, the app that makes
           sharing, splitting and paying your bill with friends hassle-free!{' '}

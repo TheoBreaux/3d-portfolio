@@ -16,14 +16,14 @@ import ScrollToTop from './components/ScrollToTop';
 const App = () => {
   return (
     <div>
-      <main className="bg-slate-300/20 h-full">
+      <main className=" h-full">
         <Router>
           <Navbar />
           <ScrollToTop />
           <Routes>
             <Route
               path="/"
-              element={<Home />}
+              element={<GoDutch />}
             />
             <Route
               path="/about"

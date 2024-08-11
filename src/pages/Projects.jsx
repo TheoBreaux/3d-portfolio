@@ -1,14 +1,14 @@
-import { Link } from "react-router-dom";
-import { projects } from "../constants";
-import CTA from "../components/CTA";
-import { FaGithub } from "react-icons/fa";
-import { FaLink } from "react-icons/fa";
+import { Link, NavLink } from 'react-router-dom';
+import { projects } from '../constants';
+import CTA from '../components/CTA';
+import { FaGithub } from 'react-icons/fa';
+import { FaLink } from 'react-icons/fa';
 
 const Projects = () => {
   return (
     <section className="max-container">
       <h1 className="head-text">
-        My{" "}
+        My{' '}
         <span className="blue-gradient_text font-semibold drop-shadow">
           Projects
         </span>
@@ -24,8 +24,72 @@ const Projects = () => {
         </p>
       </div>
       <div className="flex flex-wrap my-20 gap-16">
+        <div className="lg:w-[400px] w-full">
+          <div className="block-container w-12 h-12">
+            <div className={`btn-back rounded-xl btn-back-red`} />
+          </div>
+          <div className="mt-1 flex flex-col">
+            <h4 className="text-2xl font-poppins font-semibold">Go Dutch!</h4>
+            <p className="mt-2 text-slate-500">
+              Go Dutch! is an interactive, collaborative dining bill-splitting,
+              mobile application that streamlines the process of dividing
+              restaurant expenses among friends. Go Dutch! seamlessly parses
+              receipts, adds diners, and distributes costs effortlessly. The
+              intuitive interface offers special features like birthday
+              bill-sharing and payment notification requests. Elevate your
+              dining experience and impress your friends with our
+              professional-grade app!
+            </p>
+            <div className="mt-1 flex items-center gap-2 font-poppins">
+              <div className="flex">
+                <div className="flex items-center mr-2">
+                  <Link
+                    to="https://github.com/TheoBreaux/go-dutch-react-native"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-blue-600"
+                  >
+                    <FaGithub size={30} />
+                  </Link>
+                </div>
+
+                <div className="flex items-center">
+                  {/* <NavLink
+                    to="/godutch"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-blue-600"
+                  > */}
+                  <NavLink
+                    to="/godutchapp"
+                    className="font-semibold text-blue-600"
+                  >
+                    <FaLink size={30} />
+                  </NavLink>
+
+                  {/* </NavLink> */}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* <NavLink
+            to="/acting"
+            className={({ isActive }) =>
+              ${
+                isActive ? 'text-blue-500' : 'text-black'
+              } text-base sm:text-lg md:text-xl
+            }
+          >
+            Acting
+          </NavLink> */}
+
         {projects.map((project) => (
-          <div className="lg:w-[400px] w-full" key={project.name}>
+          <div
+            className="lg:w-[400px] w-full"
+            key={project.name}
+          >
             <div className="block-container w-12 h-12">
               <div className={`btn-back rounded-xl ${project.theme}`} />
             </div>

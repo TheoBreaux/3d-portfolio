@@ -62,14 +62,14 @@ export const experiences = [
 ];
 
 export const projects = [
-  {
-    theme: 'btn-back-red',
-    name: 'Go Dutch!',
-    description:
-      'Go Dutch! is an interactive, collaborative dining bill-splitting, mobile application that streamlines the process of dividing restaurant expenses among friends. Go Dutch! seamlessly parses receipts, adds diners, and distributes costs effortlessly. The intuitive interface offers special features like birthday bill-sharing and payment notification requests. Elevate your dining experience and impress your friends with our professional-grade app!',
-    link: '/godutch',
-    gitHubLink: 'https://github.com/TheoBreaux/go-dutch-react-native',
-  },
+  // {
+  //   theme: 'btn-back-red',
+  //   name: 'Go Dutch!',
+  //   description:
+  //     'Go Dutch! is an interactive, collaborative dining bill-splitting, mobile application that streamlines the process of dividing restaurant expenses among friends. Go Dutch! seamlessly parses receipts, adds diners, and distributes costs effortlessly. The intuitive interface offers special features like birthday bill-sharing and payment notification requests. Elevate your dining experience and impress your friends with our professional-grade app!',
+  //   link: '/godutch',
+  //   gitHubLink: 'https://github.com/TheoBreaux/go-dutch-react-native',
+  // },
   {
     theme: 'btn-back-green',
     name: 'NutriGoalTracker',

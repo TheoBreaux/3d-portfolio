@@ -14,6 +14,7 @@ import ReceiptCaptureImage from '../assets/images/receipt-capture-image.png';
 import video from '../assets/videos/go-dutch-demo-video.mp4';
 
 const GoDutch = () => {
+  console.log("GoDutch component rendered");
   return (
     <div className="app">
       <div className="go-dutch-header">

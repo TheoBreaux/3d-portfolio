@@ -38,7 +38,7 @@ const App = () => {
               element={<EmailMarketing />}
             />
             <Route
-              path="/godutch"
+              path="/godutchapp"
               element={<GoDutch />}
             />
             <Route

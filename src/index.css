@@ -320,6 +320,12 @@ body:has(.card[data-color='green']:hover) {
   border-radius: 10px;
 }
 
+/* ACTING PAGE STYLING */
+.video-reel-container {
+  /* width: 100%; */
+  margin: 120px 0 20px 0;
+}
+
 @media screen and (max-width: 768px) {
   .app {
     width: 100%;

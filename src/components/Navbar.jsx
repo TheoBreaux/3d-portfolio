@@ -26,7 +26,7 @@ const Navbar = () => {
                     isActive
                       ? 'text-blue-500'
                       : location.pathname === '/acting'
-                      ? 'text-yellow-500'
+                      ? 'text-black'
                       : 'text-black'
                   } text-base sm:text-lg md:text-xl`
                 }

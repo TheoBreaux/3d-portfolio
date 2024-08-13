@@ -23,7 +23,7 @@ body:has(.card[data-color='green']:hover) {
 
 @layer utilities {
   .max-container {
-    @apply max-w-5xl mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)];
+    @apply max-w-4xl mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)];
   }
 
   .head-text {
@@ -47,7 +47,7 @@ body:has(.card[data-color='green']:hover) {
   }
 
   .btn {
-    @apply text-white bg-gradient-to-r from-[#00c6ff] to-[#0072ff] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center;
+    @apply text-white bg-gradient-to-r from-[#00c6ff] to-[#0072ff] focus:ring-4 focus:outline-none focus:ring-blue-300 font-normal rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center;
   }
 
   .header {
@@ -168,10 +168,10 @@ body:has(.card[data-color='green']:hover) {
 /* GO DUTCH STYLES */
 
 #root {
-  /* max-width: 1029px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center; */
+  /* max-width: 1029px; */
+  /* margin: 0 auto; */
+  /* padding: 20px; */
+  /* text-align: center; */
 }
 
 .go-dutch-header {
@@ -321,9 +321,106 @@ body:has(.card[data-color='green']:hover) {
 }
 
 /* ACTING PAGE STYLING */
+.acting-head-text {
+  font-size: 40px;
+  font-weight: bold;
+}
+.insta-icon {
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+}
+
+.representative-name {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.representative-text {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.phone-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.email-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.representation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.representative {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.representative-logo {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+
+.representative-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
 .video-reel-container {
   /* width: 100%; */
   margin: 120px 0 20px 0;
+}
+
+/* ACTING CREDIT STYLES */
+.credit-title {
+  font-size: 14px;
+  font-weight: 700;
+  width: 50%;
+  text-align: left;
+}
+
+.role {
+  font-size: 14px;
+  width: 50%;
+  text-align: left;
+}
+.production-company {
+  font-size: 14px;
+  width: 50%;
+  text-align: left;
+}
+
+@keyframes flyInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.fly-in-right {
+  animation: flyInFromRight 0.5s ease-out forwards;
 }
 
 @media screen and (max-width: 768px) {
@@ -382,6 +479,100 @@ body:has(.card[data-color='green']:hover) {
   .feature-description-text {
     font-size: 12px;
     text-align: justify;
+  }
+
+  /* ACTING PAGE STYLING */
+  .acting-head-text {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .insta-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+  }
+
+  .phone-icon {
+    width: 10px;
+    height: 10px;
+  }
+
+  .email-icon {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+  }
+
+  .representation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .representative {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+
+  .representative-logo {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .representative-logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .credit-title {
+    font-size: 10px;
+    font-weight: 700;
+    width: 50%;
+    text-align: left;
+  }
+
+  .role {
+    font-size: 10px;
+    width: 50%;
+    text-align: left;
+  }
+  .production-company {
+    font-size: 10px;
+    width: 50%;
+    text-align: left;
+  }
+
+  .btn {
+    font-size: 10px; /* Smaller text size on small screens */
+    padding: 4px 5px; /* Smaller padding on small screens */
+  }
+
+  .video-reel-container {
+    /* width: 100%; */
+    margin: 120px 0 20px 0;
+  }
+
+  @keyframes flyInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .fly-in-right {
+    animation: flyInFromRight 0.5s ease-out forwards;
   }
 }
 

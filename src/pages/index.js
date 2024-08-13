@@ -16,6 +16,11 @@ import omg7 from '../assets/images/OMG-7.jpg';
 import omg8 from '../assets/images/OMG-8.jpg';
 import omg9 from '../assets/images/OMG-9.jpg';
 import omg10 from '../assets/images/OMG-10.jpg';
+import Headshot2 from '../assets/images/professional-theatrical.jpg';
+import Headshot3 from '../assets/images/body-theatrical.jpg';
+import Headshot4 from '../assets/images/cop-theatrical.jpg';
+import Headshot5 from '../assets/images/commercial-smile.jpg';
+import Headshot6 from '../assets/images/blue-smile.jpg';
 
 export {
   About,
@@ -40,3 +45,12 @@ export const images = {
   omg9,
   omg10,
 };
+
+export const actorImages = {
+  Headshot2,
+  Headshot3,
+  Headshot4,
+  Headshot5,
+  Headshot6,
+};
+

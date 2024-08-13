@@ -1,3 +1,17 @@
+import daysClip from '../assets/videos/days-of-lives.mp4';
+import escapeTheNight from '../assets/videos/escape-the-night.mp4';
+import popOff from '../assets/videos/pop-off-clip.mp4';
+import criminales from '../assets/videos/criminales.mp4';
+import tupac from '../assets/videos/tupac.mp4';
+import shameless from '../assets/videos/shameless.mp4';
+import codeBlack from '../assets/videos/code-black.mp4';
+import nineOneOne from '../assets/videos/nineOneOne.mp4';
+import virtuallyHeroes from '../assets/videos/virtually-heroes.mp4';
+import beatHerHeart from '../assets/videos/beat-her-heart.mp4';
+import lastLife from '../assets/videos/last-life.mp4';
+import wandaSykes from '../assets/videos/wanda-sykes.mp4';
+import boulevard from '../assets/videos/boulevard.mp4';
+
 export const experiences = [
   {
     title: 'Mobile Application Developer',
@@ -62,14 +76,6 @@ export const experiences = [
 ];
 
 export const projects = [
-  // {
-  //   theme: 'btn-back-red',
-  //   name: 'Go Dutch!',
-  //   description:
-  //     'Go Dutch! is an interactive, collaborative dining bill-splitting, mobile application that streamlines the process of dividing restaurant expenses among friends. Go Dutch! seamlessly parses receipts, adds diners, and distributes costs effortlessly. The intuitive interface offers special features like birthday bill-sharing and payment notification requests. Elevate your dining experience and impress your friends with our professional-grade app!',
-  //   link: '/godutch',
-  //   gitHubLink: 'https://github.com/TheoBreaux/go-dutch-react-native',
-  // },
   {
     theme: 'btn-back-green',
     name: 'NutriGoalTracker',
@@ -122,5 +128,276 @@ export const education = [
     location: 'Remote',
     certification: 'Google Data Analytics Specialization',
     points: [],
+  },
+];
+
+export const videoClips = {
+  daysClip: daysClip,
+  escapeTheNight: escapeTheNight,
+  popOff: popOff,
+  criminales: criminales,
+  tupac: tupac,
+  shameless: shameless,
+  codeBlack: codeBlack,
+  nineOneOne: nineOneOne,
+  beatHerHeart: beatHerHeart,
+  virtuallyHeroes: virtuallyHeroes,
+  lastLife: lastLife,
+  wandaSykes: wandaSykes,
+  boulevard: boulevard,
+};
+
+export const televisionActingRoles = [
+  {
+    title: 'Shark Tank',
+    role: 'Model',
+    productionCompany: 'ABC',
+    clipName: '',
+  },
+  {
+    title: 'Shameless',
+    role: 'Co-star',
+    productionCompany: 'Showtime',
+    clipName: shameless,
+  },
+  {
+    title: '9-1-1',
+    role: 'Co-star',
+    productionCompany: 'FOX',
+    clipName: nineOneOne,
+  },
+  {
+    title: 'Euphoria',
+    role: 'Co-star',
+    productionCompany: 'HBO',
+    clipName: '',
+  },
+  {
+    title: 'Animal Kingdom',
+    role: 'Co-star',
+    productionCompany: 'TNT Network',
+    clipName: '',
+  },
+  {
+    title: 'Escape The Night',
+    role: 'Guest Star',
+    productionCompany: 'YouTube Red',
+    clipName: escapeTheNight,
+  },
+  {
+    title: 'Unsolved: Murders of Tupac/B.I.G. ',
+    role: 'Co-star',
+    productionCompany: 'USA Network',
+    clipName: tupac,
+  },
+  {
+    title: 'Brooklyn Nine-Nine',
+    role: 'Co-star',
+    productionCompany: 'FOX',
+    clipName: '',
+  },
+  {
+    title: 'Code Black',
+    role: 'Recurring',
+    productionCompany: 'CBS',
+    clipName: codeBlack,
+  },
+  {
+    title: 'Days of Our Lives',
+    role: 'Co-star',
+    productionCompany: 'Corday Prod.',
+    clipName: daysClip,
+  },
+  {
+    title: 'Then What Happened?',
+    role: 'Series Regular',
+    productionCompany: 'TWH Prod.',
+    clipName: '',
+  },
+
+  {
+    title: "It's Always Sunny in Philadelphia",
+    role: 'Co-Star',
+    productionCompany: 'FX',
+    clipName: '',
+  },
+
+  {
+    title: 'Chelsea Lately',
+    role: 'Co-Star / Model',
+    productionCompany: 'E! Network',
+    clipName: '',
+  },
+  {
+    title: 'The Arsenio Hall Show',
+    role: 'Co-Star',
+    productionCompany: 'CBS',
+    clipName: '',
+  },
+  {
+    title: 'NCIS: Los Angeles',
+    role: 'Co-Star',
+    productionCompany: 'CBS',
+    clipName: '',
+  },
+  {
+    title: 'The Mentalist',
+    role: 'Co-Star',
+    productionCompany: 'CBS',
+    clipName: '',
+  },
+
+  {
+    title: 'Southland',
+    role: 'Co-Star',
+    productionCompany: 'NBC',
+    clipName: '',
+  },
+  {
+    title: 'The Wanda Sykes Show',
+    role: 'Co-Star',
+    productionCompany: 'FOX',
+    clipName: wandaSykes,
+  },
+  {
+    title: 'Blood Relatives',
+    role: 'Guest Star',
+    productionCompany: 'ID Network',
+    clipName: '',
+  },
+  {
+    title: "America's Most Wanted",
+    role: 'Co-Star',
+    productionCompany: 'FOX',
+    clipName: '',
+  },
+  {
+    title: 'Last Life',
+    role: 'Series Regular',
+    productionCompany: 'Puma Squad Prod.',
+    clipName: lastLife,
+  },
+  {
+    title: 'Boulevard',
+    role: 'Series Regular',
+    productionCompany: 'London Prod.',
+    clipName: boulevard,
+  },
+
+  ,
+];
+
+export const filmActingRoles = [
+  {
+    title: 'Pop-Off',
+    role: 'Lead',
+    productionCompany: 'Rance Collins',
+    clipName: popOff,
+  },
+  {
+    title: 'Purple Hearts',
+    role: 'Supporting',
+    productionCompany: 'Netflix',
+    clipName: '',
+  },
+  {
+    title: 'Criminales',
+    role: 'Lead',
+    productionCompany: 'Good Son Pic.',
+    clipName: criminales,
+  },
+  {
+    title: 'The Takeover',
+    role: 'Supporting',
+    productionCompany: 'RayVen Choi Films',
+    clipName: '',
+  },
+  {
+    title: 'The Beat That Her Heart Skipped',
+    role: 'Supporting ',
+    productionCompany: 'Robb Ent.',
+    clipName: beatHerHeart,
+  },
+  {
+    title: 'Sammy-Gate',
+    role: 'Supporting',
+    productionCompany: 'Slamdance, Inc.',
+    clipName: '',
+  },
+  {
+    title: 'Virtually Heroes',
+    role: 'Supporting',
+    productionCompany: 'New Horizon Pic.',
+    clipName: virtuallyHeroes,
+  },
+  {
+    title: 'Date Night',
+    role: 'Supporting',
+    productionCompany: '20th Century Fox',
+    clipName: '',
+  },
+  {
+    title: 'After The Fall',
+    role: 'supporting',
+    productionCompany: 'Hallmark Channel',
+    clipName: '',
+  },
+  {
+    title: 'The Famous Joe Project',
+    role: 'Supporting',
+    productionCompany: 'Eli Rarey',
+    clipName: '',
+  },
+
+  {
+    title: 'Broken Hearts Club',
+    role: 'Supporting',
+    productionCompany: '319 Prod.',
+    clipName: '',
+  },
+];
+
+export const theaterActingRoles = [
+  {
+    title: 'Shock Therapy',
+    role: 'Moses',
+    productionCompany: 'Lillian Theater',
+    clipName: '',
+  },
+  {
+    title: 'Angels in America, Parts 1 & 2',
+    role: 'Belize / Mr.Lies',
+    productionCompany: 'NoHo Arts Center',
+    clipName: '',
+  },
+  {
+    title: 'Rough Sketch',
+    role: 'Various Roles',
+    productionCompany: 'Next Stage Theater',
+    clipName: '',
+  },
+  {
+    title: 'Titus Andronicus',
+    role: 'Aaron',
+    productionCompany: 'Quad C Theatre',
+    clipName: '',
+  },
+  {
+    title: "Who's Afraid of Virginia Woolf?",
+    role: 'George',
+    productionCompany: 'Allan Carr Theatre',
+    clipName: '',
+  },
+  {
+    title: 'Hair',
+    role: 'Hud',
+    productionCompany: 'The Attic Playhouse',
+    clipName: '',
+  },
+  {
+    title: 'The Colored Museum',
+    role: 'Junie / Miss Roj',
+    productionCompany: 'Lake Forest College',
+    clipName: '',
   },
 ];

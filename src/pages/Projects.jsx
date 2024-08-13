@@ -13,7 +13,7 @@ const Projects = () => {
           Projects
         </span>
       </h1>
-      <div className="mt-1 flex flex-col gap-3 text-slate-500">
+      <div className="mt-1 flex flex-col flex-wrap gap-3 text-slate-500">
         <p>
           Over the past few years, I have honed my skills in various technical
           disciplines. I am proficient in React.js, React Native, Redux,

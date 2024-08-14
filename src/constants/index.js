@@ -1,16 +1,16 @@
-import daysClip from '../assets/videos/days-of-lives.mp4';
-import escapeTheNight from '../assets/videos/escape-the-night.mp4';
-import popOff from '../assets/videos/pop-off-clip.mp4';
-import criminales from '../assets/videos/criminales.mp4';
-import tupac from '../assets/videos/tupac.mp4';
-import shameless from '../assets/videos/shameless.mp4';
-import codeBlack from '../assets/videos/code-black.mp4';
-import nineOneOne from '../assets/videos/nineOneOne.mp4';
-import virtuallyHeroes from '../assets/videos/virtually-heroes.mp4';
-import beatHerHeart from '../assets/videos/beat-her-heart.mp4';
-import lastLife from '../assets/videos/last-life.mp4';
-import wandaSykes from '../assets/videos/wanda-sykes.mp4';
-import boulevard from '../assets/videos/boulevard.mp4';
+import daysClip from '../../public/videos/days-of-lives.mp4';
+import escapeTheNight from '../../public/videos/escape-the-night.mp4';
+import popOff from '../../public/videos/pop-off-clip.mp4';
+import criminales from '../../public/videos/criminales.mp4';
+import tupac from '../../public/videos/tupac.mp4';
+import shameless from '../../public/videos/shameless.mp4';
+import codeBlack from '../../public/videos/code-black.mp4';
+import nineOneOne from '../../public/videos/nine-one-one.mp4';
+import virtuallyHeroes from '../../public/videos/virtually-heroes.mp4';
+import beatHerHeart from '../../public/videos/beat-her-heart.mp4';
+import lastLife from '../../public/videos/last-life.mp4';
+import wandaSykes from '../../public/videos/wanda-sykes.mp4';
+import boulevard from '../../public/videos/boulevard.mp4';
 
 export const experiences = [
   {

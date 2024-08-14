@@ -17,22 +17,16 @@ const ActingCredit = ({ role }) => {
       className={`flex flex-col w-full p-2 ${isVisible ? 'fly-in-right' : ''}`}
     >
       <div className="flex flex-row items-center justify-between space-x-4">
-        <p className="credit-title">
-          {role.title}
-        </p>
-        <p className="role">
-          {role.role}
-        </p>
-        <p className="production-company">
-          {role.productionCompany}
-        </p>
+        <p className="credit-title">{role.title}</p>
+        <p className="role">{role.role}</p>
+        <p className="production-company">{role.productionCompany}</p>
         <div className="w-1/6">
           {role.clipName ? (
             <button
               className="btn"
               onClick={() => onClickClipHandler(role.clipName)}
             >
-              View
+              {activeClip ? 'Hide' : 'View'}
             </button>
           ) : (
             <div className="invisible">&nbsp;</div>

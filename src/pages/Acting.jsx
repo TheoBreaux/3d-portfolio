@@ -1,5 +1,5 @@
 import Headshot1 from '../assets/images/headshot-center.jpg';
-import Reel from '../assets/videos/theo-breaux-reel.mp4';
+import Reel from '../../public/videos/theo-breaux-reel.mp4';
 import MZALOGO from '../assets/images/mza-logo.png';
 import ROBBLOGO from '../assets/images/robb-logo.png';
 import { actorImages } from '../pages/index.js';
@@ -56,7 +56,7 @@ const Acting = () => {
           />
         </a>
         <a
-          href="../../public/acting-resume.pdf"
+          href="../../public/files/acting-resume.pdf"
           download
           target="_blank"
           rel="noreferrer"

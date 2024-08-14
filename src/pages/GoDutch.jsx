@@ -11,7 +11,7 @@ import FavoriteRestaurantsScreen from '../assets/images/favorite-restaurants-scr
 import ViewUserProfileScreen from '../assets/images/view-user-profile-screen.png';
 import GoDutchLogo from '../assets/images/go-dutch-icon.png';
 import ReceiptCaptureImage from '../assets/images/receipt-capture-image.png';
-import video from '../assets/videos/go-dutch-demo-video.mp4';
+import video from '../../public/videos/go-dutch-demo-video.mp4';
 
 const GoDutch = () => {
   console.log("GoDutch component rendered");

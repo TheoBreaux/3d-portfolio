@@ -51,18 +51,6 @@ export const experiences = [
     ],
   },
   {
-    title: 'Software Engineer Intern',
-    company_name: 'Aayats',
-    date: 'January 2024 - February 2024',
-    points: [
-      'Employed Flutter for mobile application design',
-      'Used Figma for design and wireframing of UI/UX, providing a seamless user experience',
-      'Assisted in design and implementation of new features for both iOS and Android platforms',
-      'Collaborated with development team in creation, testing, and maintenance of mobile application',
-    ],
-  },
-
-  {
     title: 'Chief Operating Officer/Co-founder',
     company_name: 'Breatzke, LLC',
     date: 'Apr 2018 - Present',
@@ -71,6 +59,17 @@ export const experiences = [
       'Successfully managed a monthly marketing budget of $5,000, achieving a 150% ROI through targeted campaigns and cost-effective strategies',
       'Analyzed sales data and implemented inventory optimization strategies, reducing excess stock by 25% while ensuring a 90% product availability rate',
       'Developed and executed strategic plans resulting in a 15% increase in revenue and a 10% improvement in overall performance metrics',
+    ],
+  },
+  {
+    title: 'Software Engineer Intern',
+    company_name: 'Aayats',
+    date: 'January 2024 - February 2024',
+    points: [
+      'Employed Flutter for mobile application design',
+      'Used Figma for design and wireframing of UI/UX, providing a seamless user experience',
+      'Assisted in design and implementation of new features for both iOS and Android platforms',
+      'Collaborated with development team in creation, testing, and maintenance of mobile application',
     ],
   },
 ];
@@ -86,7 +85,7 @@ export const projects = [
   },
   {
     theme: 'btn-back-blue',
-    name: 'Guess the Country Trivia Game',
+    name: 'Guess the Country Trivia',
     description:
       'Guess the Country is an engaging and interactive country flag guessing game designed to enhance knowledge of various national flags. Challenge yor flag recognition skills by correctly identifying random country flags and aim to outscore other players.',
     link: 'https://guess-the-country.vercel.app',
@@ -107,7 +106,7 @@ export const education = [
     institution: 'Western Governors University',
     location: 'Remote',
     certification:
-      'Bachelor of Science in Software Engineering (Expected 2024)',
+      'Bachelor of Science in Software Engineering (Expected 2025)',
     points: [],
   },
   {

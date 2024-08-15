@@ -29,7 +29,7 @@ const Projects = () => {
             <div className={`btn-back rounded-xl btn-back-red`} />
           </div>
           <div className="mt-1 flex flex-col">
-            <h4 className="text-2xl font-poppins font-semibold">Go Dutch!</h4>
+            <h4 className="text-2xl font-bold">Go Dutch!</h4>
             <p className="mt-2 text-slate-500">
               Go Dutch! is an interactive, collaborative dining bill-splitting,
               mobile application that streamlines the process of dividing
@@ -40,7 +40,7 @@ const Projects = () => {
               dining experience and impress your friends with our
               professional-grade app!
             </p>
-            <div className="mt-1 flex items-center gap-2 font-poppins">
+            <div className="mt-1 flex items-center gap-2 font-bold">
               <div className="flex">
                 <div className="flex items-center mr-2">
                   <Link
@@ -54,12 +54,6 @@ const Projects = () => {
                 </div>
 
                 <div className="flex items-center">
-                  {/* <NavLink
-                    to="/godutch"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-semibold text-blue-600"
-                  > */}
                   <NavLink
                     to="/godutchapp"
                     className="font-semibold text-blue-600"
@@ -74,32 +68,19 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* <NavLink
-            to="/acting"
-            className={({ isActive }) =>
-              ${
-                isActive ? 'text-blue-500' : 'text-black'
-              } text-base sm:text-lg md:text-xl
-            }
-          >
-            Acting
-          </NavLink> */}
-
         {projects.map((project) => (
           <div
-            className="lg:w-[400px] w-full"
+            className="w-full lg:flex-1"
             key={project.name}
           >
             <div className="block-container w-12 h-12">
               <div className={`btn-back rounded-xl ${project.theme}`} />
             </div>
             <div className="mt-1 flex flex-col">
-              <h4 className="text-2xl font-poppins font-semibold">
-                {project.name}
-              </h4>
+              <h4 className="text-2xl font-bold">{project.name}</h4>
               <p className="mt-2 text-slate-500">{project.description}</p>
 
-              <div className="mt-1 flex items-center gap-2 font-poppins">
+              <div className="mt-1 flex items-center gap-2">
                 <div className="flex">
                   <div className="flex items-center mr-2">
                     <Link

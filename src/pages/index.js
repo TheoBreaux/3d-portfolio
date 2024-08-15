@@ -1,7 +1,7 @@
 import About from './About';
 import Home from './Home';
 import Projects from './Projects';
-import EmailMarketing from './EmailMarketing';
+import Marketing from './Marketing';
 import Education from './Education';
 import Contact from './Contact';
 import GoDutch from './GoDutch';
@@ -26,7 +26,7 @@ export {
   About,
   Home,
   Projects,
-  EmailMarketing,
+  Marketing,
   Education,
   Contact,
   GoDutch,
@@ -34,15 +34,15 @@ export {
 };
 
 export const images = {
+  omg4,
   omg1,
+  omg7,
   omg2,
   omg3,
-  omg4,
   omg5,
-  omg6,
-  omg7,
   omg8,
   omg9,
+  omg6,
   omg10,
 };
 
@@ -53,4 +53,3 @@ export const actorImages = {
   Headshot5,
   Headshot6,
 };
-

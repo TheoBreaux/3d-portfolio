@@ -6,7 +6,7 @@ import {
   Projects,
   Education,
   Contact,
-  EmailMarketing,
+  Marketing,
   GoDutch,
   Acting,
 } from './pages';
@@ -35,7 +35,7 @@ const App = () => {
             />
             <Route
               path="/marketing"
-              element={<EmailMarketing />}
+              element={<Marketing />}
             />
             <Route
               path="/godutchapp"

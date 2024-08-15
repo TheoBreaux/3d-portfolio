@@ -1,22 +1,16 @@
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
-
-import { education } from "../constants";
-import CTA from "../components/CTA";
+import { education } from '../constants';
+import EducationExperience from '../components/EducationExperience';
 
 const Education = () => {
   return (
-    <section className="max-container">
-      <h1 className="head-text">
-        My{" "}
+    <section className="container">
+      <h1 className="subhead-text">
+        My{' '}
         <span className="blue-gradient_text font-semibold drop-shadow">
           Education
         </span>
       </h1>
-      <div className="mt-1 flex flex-col gap-3 text-slate-500">
+      <div className="flex flex-col gap-3 text-slate-500">
         <p>
           During the COVID-19 pandemic, I transitioned from the hospitality and
           entertainment industries to the tech field. I began with the Google
@@ -30,45 +24,19 @@ const Education = () => {
         </p>
       </div>
 
-      <div className="py-1" id="education">
-        <div className="flex">
-          <VerticalTimeline>
-            {education.map((education) => (
-              <VerticalTimelineElement key={education.name}>
-                <div>
-                  <h3 className="text-black text-xl font-poppins font-semibold">
-                    {education.institution}
-                  </h3>
-                  <p
-                    className="text-black-500 font-medium font-base"
-                    style={{ margin: 0 }}
-                  >
-                    {education.location}
-                  </p>
-                  <p
-                    className="text-black-500 font-medium font-base"
-                    style={{ margin: 0 }}
-                  >
-                    {education.certification}
-                  </p>
-                </div>
-                {/* <ul className="my-5 list-disc ml-5 space-y-2">
-                  {education.points.map((point, index) => (
-                    <li
-                      key={`experience-point-${index}`}
-                      className="text-black-500/50 font-normal pl-1 text-small"
-                    >
-                      {point}
-                    </li>
-                  ))}
-                </ul> */}
-              </VerticalTimelineElement>
-            ))}
-          </VerticalTimeline>
+      <div
+        className="py-1"
+        id="education"
+      >
+        <div className="flex flex-col justify-center mb-5">
+          {education.map((education) => (
+            <EducationExperience
+              key={education.institution}
+              education={education}
+            />
+          ))}
         </div>
       </div>
-      <hr className="border-slate-200" />
-      <CTA />
     </section>
   );
 };

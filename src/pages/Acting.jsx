@@ -69,9 +69,9 @@ const Acting = () => {
         alt="Headshot 5"
       />
 
-      <div className="representation-container w-full max-w-5xl mx-auto flex justify-center space-x-10">
+      <div className="representation-container w-full max-w-5xl mx-auto flex flex-wrap justify-center gap-10 px-4">
         {/* Representative Info */}
-        <div className="representative w-64">
+        <div className="representative w-64 sm:w-56 xs:w-48 flex-shrink-0">
           <a
             href="https://www.mza.agency/"
             target="_blank"
@@ -81,37 +81,38 @@ const Acting = () => {
               <img
                 src={MZALOGO}
                 alt="michael zanuck logo"
-                className="representative-logo"
+                className="representative-logo w-full h-auto max-h-24 object-contain"
               />
             </div>
           </a>
-          <p className="representative-name">Michael Zanuck</p>
+          <p className="representative-name text-lg sm:text-base xs:text-sm mt-2 whitespace-nowrap">Michael Zanuck</p>
 
-          <div className="flex items-center">
+          <div className="flex items-center mt-1 space-x-2">
             <img
-              className="phone-icon"
+              className="phone-icon w-5 h-5"
               src={Phone}
               alt="phone Icon"
             />
-            <p className="representative-text">818.707.9747</p>
+            <p className="representative-text text-sm sm:text-xs">818.707.9747</p>
           </div>
 
-          <div className="flex items-center">
+          <div className="flex items-center mt-1">
             <a
-              href="mailto: audition@mzaagency.com"
-              className="representative-text"
+              href="mailto:audition@mzaagency.com"
+              className="representative-text text-sm sm:text-xs flex items-center space-x-1"
             >
               <img
-                className="email-icon"
+                className="email-icon w-5 h-5"
                 src={Email}
                 alt="email Icon"
               />
+              <span className="sr-only">Email</span>
             </a>
           </div>
         </div>
 
         {/* Podcast Section */}
-        <div className="podcast-section flex items-center space-x-4 w-auto">
+        <div className="podcast-section flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6 w-auto max-w-xs sm:max-w-md">
           <a
             href="https://youtube.com/@yourenotmytypebro"
             target="_blank"
@@ -120,33 +121,34 @@ const Acting = () => {
             <img
               src={PodcastLogo}
               alt="Theo Breaux Podcast Logo"
-              className="w-32 h-32 object-contain cursor-pointer"
+              className="w-24 sm:w-32 h-auto object-contain cursor-pointer"
             />
           </a>
 
-          <div className="flex flex-col">
+          <div className="flex flex-col items-center sm:items-start">
             <a
               href="https://youtube.com/@yourenotmytypebro"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-2xl font-semibold text-blue-600 hover:underline"
+              className="text-xl sm:text-2xl font-semibold text-blue-600 hover:underline text-center sm:text-left"
             >
-              You're Not My Type, Bro!
+              <p className="">
+                You're Not <span className="blue-gradient_text font-semibold drop-shadow">My Type, Bro!</span>
+              </p>
             </a>
             <a
               href="https://youtube.com/@yourenotmytypebro"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xl text-gray-500 hover:underline"
+              className="text-base sm:text-xl font-bold text-gray-500 hover:underline text-center sm:text-left"
             >
-              Listen & Subscribe
+              Watch, Listen & Subscribe
             </a>
           </div>
         </div>
 
-        {/* Uncomment this block if you want to add the second representative */}
-
-        <div className="representative w-64">
+        {/* Second Representative */}
+        <div className="representative w-64 sm:w-56 xs:w-48 flex-shrink-0">
           <a
             href="http://therobbcompany.com/home.html"
             target="_blank"
@@ -155,45 +157,32 @@ const Acting = () => {
             <div className="representative-logo-wrapper">
               <img
                 src={ROBBLOGO}
-                className="representative-logo"
+                className="representative-logo w-full h-auto max-h-24 object-contain"
                 alt="robb company logo"
               />
             </div>
           </a>
 
-          {/* <p className="representative-name">Sherry Robb</p>
-          <div className="flex items-center">
-            <img
-              className="phone-icon"
-              src={Phone}
-              alt="phone Icon"
-            />
-            <p className="representative-text">818.384.0848</p>
-          </div> */}
-          <div className="flex items-center">
+          {/* Uncomment below if needed */}
+          {/* <p className="representative-name text-lg sm:text-base xs:text-sm mt-2">Sherry Robb</p>
+    <div className="flex items-center mt-1 space-x-2">
+      <img className="phone-icon w-5 h-5" src={Phone} alt="phone Icon" />
+      <p className="representative-text text-sm sm:text-xs">818.384.0848</p>
+    </div> */}
+
+          <div className="flex items-center mt-1">
             <a
-              href="mailto: therobbcompany@gmail.com"
-              className="representative-text"
+              href="mailto:therobbcompany@gmail.com"
+              className="representative-text text-sm sm:text-xs flex items-center space-x-1"
             >
               <img
-                className="email-icon"
+                className="email-icon w-5 h-5"
                 src={Email}
                 alt="email Icon"
               />
+              <span className="sr-only">Email</span>
             </a>
           </div>
-        </div>
-      </div>
-
-      <div className="mt-5 flex flex-col">
-        <div className="flex flex-col items-center justify-center">
-          <video
-            controls
-            autoPlay
-            width="100%"
-            className="video-reel-player"
-            src={Reel}
-          ></video>
         </div>
       </div>
 

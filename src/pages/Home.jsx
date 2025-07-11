@@ -3,20 +3,23 @@ import HeadShot from '../assets/images/hero-image.png'
 
 const Home = () => {
   return (
-    <section>
+    <section >
       <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center flex-col space-y-8">
         {/* Hero Section */}
         <div className="text-center max-w-2xl">
-          <h1 className="mt-5 text-4xl font-bold text-black">Hi, I'm Theo Breaux</h1>
-          <p className="mt-4 text-lg text-black">
-            <p className="mt-4 text-lg text-black">Mobile Developer · Actor · Podcaster</p>
-          </p>
-          <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">Building Apps, Telling Stories, Taking the Mic</p>
+          <h1
+            className="mt-0 mb-0 text-5xl sm:text-6xl font-bold text-black tracking-wider"
+            style={{ fontFamily: "'Engagement', cursive" }}
+          >
+            Theo Breaux
+          </h1>
+          <p className="mt-2 text-lg text-black">Mobile Developer · Actor · Podcaster</p>
+          <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">Building Apps, Telling Stories, Taking the Mic</p>
         </div>
 
         {/* Profile Image */}
         <img
-          src={HeadShot} // Replace this with the actual path to your PNG image
+          src={HeadShot}
           alt="Theo Breaux headshot – Mobile Developer, Actor, and Podcaster"
           className="w-[90%] sm:w-[65%] max-w-lg h-auto rounded-2xl shadow-xl object-cover"
         />

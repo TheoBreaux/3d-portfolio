@@ -1,26 +1,20 @@
-import { Link, NavLink } from 'react-router-dom';
-import { projects } from '../constants';
-import CTA from '../components/CTA';
-import { FaGithub } from 'react-icons/fa';
-import { FaLink } from 'react-icons/fa';
+import { Link, NavLink } from 'react-router-dom'
+import { projects } from '../constants'
+import CTA from '../components/CTA'
+import { FaGithub } from 'react-icons/fa'
+import { FaLink } from 'react-icons/fa'
 
 const Projects = () => {
   return (
-    <section className="max-container">
+    <section className="absolute top-28 left-0 right-0 px-4 sm:px-8 lg:px-20 mx-auto max-w-6xl">
       <h1 className="head-text">
-        My{' '}
-        <span className="blue-gradient_text font-semibold drop-shadow">
-          Projects
-        </span>
+        My <span className="blue-gradient_text font-semibold drop-shadow">Projects</span>
       </h1>
       <div className="mt-1 flex flex-col flex-wrap gap-3 text-slate-500">
         <p>
-          Over the past few years, I have honed my skills in various technical
-          disciplines. I am proficient in React.js, React Native, Redux,
-          Node.js, PostgreSQL, and crafting efficient solutions through RESTful
-          APIs. What truly sets me apart is my diverse background spanning
-          multiple industries, which imbues me with a unique perspective to my
-          work.
+          Over the past few years, I have honed my skills in various technical disciplines. I am proficient in React.js, React Native, Redux, Node.js,
+          PostgreSQL, and crafting efficient solutions through RESTful APIs. What truly sets me apart is my diverse background spanning multiple
+          industries, which imbues me with a unique perspective to my work.
         </p>
       </div>
       <div className="flex flex-wrap my-20 gap-16">
@@ -31,14 +25,10 @@ const Projects = () => {
           <div className="mt-1 flex flex-col">
             <h4 className="text-2xl font-bold">Go Dutch!</h4>
             <p className="mt-2 text-slate-500">
-              Go Dutch! is an interactive, collaborative dining bill-splitting,
-              mobile application that streamlines the process of dividing
-              restaurant expenses among friends. Go Dutch! seamlessly parses
-              receipts, adds diners, and distributes costs effortlessly. The
-              intuitive interface offers special features like birthday
-              bill-sharing and payment notification requests. Elevate your
-              dining experience and impress your friends with our
-              professional-grade app!
+              Go Dutch! is an interactive, collaborative dining bill-splitting, mobile application that streamlines the process of dividing restaurant
+              expenses among friends. Go Dutch! seamlessly parses receipts, adds diners, and distributes costs effortlessly. The intuitive interface
+              offers special features like birthday bill-sharing and payment notification requests. Elevate your dining experience and impress your
+              friends with our professional-grade app!
             </p>
             <div className="mt-1 flex items-center gap-2 font-bold">
               <div className="flex">
@@ -112,7 +102,7 @@ const Projects = () => {
       <hr className="border-slate-200" />
       <CTA />
     </section>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects

@@ -22,7 +22,7 @@ const Acting = () => {
   }
 
   return (
-    <section className="max-container">
+    <section className="absolute top-28 left-0 right-0 px-4 sm:px-8 lg:px-20 mx-auto max-w-6xl">
       <div className="flex items-center justify-center space-x-4">
         <h1 className="acting-head-text">
           Theo <span className="blue-gradient_text font-semibold drop-shadow">Breaux</span>
@@ -85,9 +85,9 @@ const Acting = () => {
               />
             </div>
           </a>
-          <p className="representative-name text-lg sm:text-base xs:text-sm mt-2 whitespace-nowrap">Michael Zanuck</p>
+          <p className="representative-name text-lg sm:text-base xs:text-sm whitespace-nowrap">Michael Zanuck</p>
 
-          <div className="flex items-center mt-1 space-x-2">
+          <div className="flex items-center space-x-2">
             <img
               className="phone-icon w-5 h-5"
               src={Phone}
@@ -96,7 +96,7 @@ const Acting = () => {
             <p className="representative-text text-sm sm:text-xs">818.707.9747</p>
           </div>
 
-          <div className="flex items-center mt-1">
+          <div className="flex items-center">
             <a
               href="mailto:audition@mzaagency.com"
               className="representative-text text-sm sm:text-xs flex items-center space-x-1"
@@ -107,42 +107,6 @@ const Acting = () => {
                 alt="email Icon"
               />
               <span className="sr-only">Email</span>
-            </a>
-          </div>
-        </div>
-
-        {/* Podcast Section */}
-        <div className="podcast-section flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6 w-auto max-w-xs sm:max-w-md">
-          <a
-            href="https://youtube.com/@yourenotmytypebro"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src={PodcastLogo}
-              alt="Theo Breaux Podcast Logo"
-              className="w-24 sm:w-32 h-auto object-contain cursor-pointer"
-            />
-          </a>
-
-          <div className="flex flex-col items-center sm:items-start">
-            <a
-              href="https://youtube.com/@yourenotmytypebro"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xl sm:text-2xl font-semibold text-blue-600 hover:underline text-center sm:text-left"
-            >
-              <p className="">
-                You're Not <span className="blue-gradient_text font-semibold drop-shadow">My Type, Bro!</span>
-              </p>
-            </a>
-            <a
-              href="https://youtube.com/@yourenotmytypebro"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-base sm:text-xl font-bold text-gray-500 hover:underline text-center sm:text-left"
-            >
-              Watch, Listen & Subscribe
             </a>
           </div>
         </div>
@@ -163,13 +127,6 @@ const Acting = () => {
             </div>
           </a>
 
-          {/* Uncomment below if needed */}
-          {/* <p className="representative-name text-lg sm:text-base xs:text-sm mt-2">Sherry Robb</p>
-    <div className="flex items-center mt-1 space-x-2">
-      <img className="phone-icon w-5 h-5" src={Phone} alt="phone Icon" />
-      <p className="representative-text text-sm sm:text-xs">818.384.0848</p>
-    </div> */}
-
           <div className="flex items-center mt-1">
             <a
               href="mailto:therobbcompany@gmail.com"
@@ -181,6 +138,42 @@ const Acting = () => {
                 alt="email Icon"
               />
               <span className="sr-only">Email</span>
+            </a>
+          </div>
+        </div>
+
+        {/* Podcast Section */}
+        <div className="podcast-section flex flex-col sm:flex-row items-center mb-4 sm:space-y-0 sm:space-x- w-auto max-w-xs sm:max-w-sm">
+          <a
+            href="https://youtube.com/@yourenotmytypebro"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={PodcastLogo}
+              alt="Theo Breaux Podcast Logo"
+              className="w-16 sm:w-20 h-auto object-contain cursor-pointer"
+            />
+          </a>
+
+          <div className="flex flex-col items-center sm:items-start">
+            <a
+              href="https://youtube.com/@yourenotmytypebro"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lg sm:text-xl font-semibold text-blue-600 hover:underline text-center sm:text-left"
+            >
+              <p>
+                You're Not <span className="blue-gradient_text font-semibold drop-shadow">My Type, Bro!</span>
+              </p>
+            </a>
+            <a
+              href="https://youtube.com/@yourenotmytypebro"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm sm:text-lg font-bold text-gray-500 hover:underline text-center sm:text-left"
+            >
+              Watch, Listen & Subscribe
             </a>
           </div>
         </div>

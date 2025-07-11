@@ -1,51 +1,40 @@
-import { images } from './index.js';
-import CTA from '../components/CTA.jsx';
-import { useNavigate } from 'react-router-dom';
-import KlaviyoNumbers from '../assets/images/omg-klaviyo-numbers.png';
-import InstaFbNumbers from '../assets/images/omg-insta-fb-numbers.png';
-import OMGMobile1 from '../assets/images/omg-mobile.png';
-import OMGMobile2 from '../assets/images/omg-mobile-2.png';
-import OMGMobile3 from '../assets/images/omg-mobile-3.png';
-import Circuit1 from '../assets/images/circuit-mobile.png';
-import Circuit2 from '../assets/images/circuit-mobile-2.png';
-import OMGVideo from '../videos/omg-mobile-recording.mp4';
-import DailyGiftyVideo from '../videos/daily-gifty-recording.mp4';
+import { images } from './index.js'
+import CTA from '../components/CTA.jsx'
+import { useNavigate } from 'react-router-dom'
+import KlaviyoNumbers from '../assets/images/omg-klaviyo-numbers.png'
+import InstaFbNumbers from '../assets/images/omg-insta-fb-numbers.png'
+import OMGMobile1 from '../assets/images/omg-mobile.png'
+import OMGMobile2 from '../assets/images/omg-mobile-2.png'
+import OMGMobile3 from '../assets/images/omg-mobile-3.png'
+import Circuit1 from '../assets/images/circuit-mobile.png'
+import Circuit2 from '../assets/images/circuit-mobile-2.png'
+import OMGVideo from '../videos/omg-mobile-recording.mp4'
+import DailyGiftyVideo from '../videos/daily-gifty-recording.mp4'
 
 const Marketing = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   const handleImageClick = (imageName) => {
-    navigate(`/image/${imageName}`);
-  };
+    navigate(`/image/${imageName}`)
+  }
 
   return (
-    <section className="max-container">
+    <section className="absolute top-28 left-0 right-0 px-4 sm:px-8 lg:px-20 mx-auto max-w-6xl">
       <h1 className="text-2xl">
-        Digital{' '}
-        <span className="blue-gradient_text font-semibold drop-shadow">
-          Marketing Portfolio
-        </span>
+        Digital <span className="blue-gradient_text font-semibold drop-shadow">Marketing Portfolio</span>
       </h1>
       <div className="mt-1 flex flex-col gap-3 text-slate-500">
         <p>
-          Over the past few years, I have developed a strong proficiency in
-          various technical and marketing areas, particularly using Klaviyo to
-          manage email marketing campaigns for OMG Sportswear USA and Circuit
-          Rave Gear. I excel at designing and implementing targeted email
-          marketing campaigns that engage audiences and boost conversion rates.
-          My skills include creating engaging content, strategically segmenting
-          email lists, and analyzing campaign data to drive continuous
-          improvement.
+          Over the past few years, I have developed a strong proficiency in various technical and marketing areas, particularly using Klaviyo to
+          manage email marketing campaigns for OMG Sportswear USA and Circuit Rave Gear. I excel at designing and implementing targeted email
+          marketing campaigns that engage audiences and boost conversion rates. My skills include creating engaging content, strategically segmenting
+          email lists, and analyzing campaign data to drive continuous improvement.
         </p>
       </div>
 
       <div className="py-10 flex flex-col">
         <h3 className="subhead-text">
-          Social{' '}
-          <span className="blue-gradient_text font-semibold drop-shadow">
-            Media
-          </span>{' '}
-          Campaigns
+          Social <span className="blue-gradient_text font-semibold drop-shadow">Media</span> Campaigns
         </h3>
 
         <div className="flex flex-wrap items-center justify-center gap-4 p-6 rounded-lg shadow-lg bg-white">
@@ -127,11 +116,7 @@ const Marketing = () => {
         </div>
 
         <h3 className="subhead-text mt-5">
-          Email{' '}
-          <span className="blue-gradient_text font-semibold drop-shadow">
-            Marketing
-          </span>{' '}
-          Campaigns
+          Email <span className="blue-gradient_text font-semibold drop-shadow">Marketing</span> Campaigns
         </h3>
 
         <div className="flex flex-wrap items-center justify-center gap-4 p-6 rounded-lg shadow-lg bg-white">
@@ -181,7 +166,7 @@ const Marketing = () => {
       <hr className="border-slate-200" />
       <CTA />
     </section>
-  );
-};
+  )
+}
 
-export default Marketing;
+export default Marketing

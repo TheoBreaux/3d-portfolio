@@ -47,7 +47,7 @@ export const experiences = [
     ],
   },
   {
-    title: 'Executive Assistant – Film & TV Distribution',
+    title: 'Executive Asst – Film & TV Distribution',
     company_name: 'Joe Patrick Consulting, LLC (TV/Film Distribution)',
     date: 'Jan 2024 - March 2025',
     points: [

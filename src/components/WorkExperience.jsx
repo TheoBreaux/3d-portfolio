@@ -9,12 +9,10 @@ const WorkExperience = ({ experience }) => {
 
   return (
     <div className={`flex flex-col w-full p-2 ${isVisible ? 'fly-in-right' : ''}`}>
-      <div className="flex justify-between items-start">
-        <h3 className="text-black text-xl font-semibold">{experience.title}</h3>
-        <p className="text-black-500 font-medium font-base">{experience.date}</p>
-      </div>
+      <h3 className="text-black text-xl font-semibold">{experience.title}</h3>
 
       <p className="text-black-500 font-medium font-base">{experience.company_name}</p>
+      <p className="text-black-500 font-medium font-base">{experience.date}</p>
 
       <ul className="my-5 list-disc ml-10 space-y-2">
         {experience.points.map((point, index) => (

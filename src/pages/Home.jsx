@@ -3,7 +3,7 @@ import HeadShot from '../assets/images/hero-image.png'
 
 const Home = () => {
   return (
-    <section className="w-full h-screen relative">
+    <section>
       <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center flex-col space-y-8">
         {/* Hero Section */}
         <div className="text-center max-w-2xl">
@@ -18,7 +18,7 @@ const Home = () => {
         <img
           src={HeadShot} // Replace this with the actual path to your PNG image
           alt="Theo Breaux headshot – Mobile Developer, Actor, and Podcaster"
-          className="w-[75%] h-auto rounded-2xl shadow-xl object-cover"
+          className="w-[90%] sm:w-[65%] max-w-lg h-auto rounded-2xl shadow-xl object-cover"
         />
 
         {/* Call-to-Action Buttons */}

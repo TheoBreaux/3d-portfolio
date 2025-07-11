@@ -1,119 +1,77 @@
-import { NavLink } from 'react-router-dom';
+import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
+import Logo from '../assets/images/LOGO-removebg-preview.png'
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const links = ['/about', '/projects', '/marketing', '/acting', '/contact']
+
   return (
-    <header className="header">
-      <div>
+    <header className="w-full bg-white shadow-md">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+        {/* Logo */}
         <NavLink
           to="/"
-          className="text-sm w-10 h-10 mb-4 rounded-lg bg-white items-center justify-center flex font-bold shadow-md border border-blue-300"
+          className="w-8 sm:w-12 md:w-16 lg:w-20 xl:w-24 rounded-lg bg-white flex items-center justify-center font-bold shadow-md border border-blue-300"
         >
-          <div className="col">
-            <p className="blue-gradient_text">TB</p>
-          </div>
+          <img
+            src={Logo}
+            alt="Theo Breaux Logo"
+            className="w-full h-full object-contain rounded-lg"
+          />
         </NavLink>
-      </div>
 
-      <div>
-        <nav className="flex text-lg gap-4 font-medium">
-          {['/about', '/projects', '/marketing', '/acting', '/contact'].map(
-            (path) => (
-              <NavLink
-                key={path}
-                to={path}
-                className={({ isActive }) =>
-                  `${
-                    isActive
-                      ? 'text-blue-500'
-                      : location.pathname === '/acting'
-                      ? 'text-black'
-                      : 'text-black'
-                  } text-base sm:text-lg md:text-xl`
-                }
-              >
-                {path.substring(1).charAt(0).toUpperCase() + path.substring(2)}
-              </NavLink>
-            )
-          )}
+        {/* Hamburger button for mobile */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="sm:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          aria-label="Toggle menu"
+        >
+          <svg
+            className="w-6 h-6 text-black"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            {isOpen ? (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            ) : (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            )}
+          </svg>
+        </button>
+
+        {/* Navigation links */}
+        <nav
+          className={`
+            ${isOpen ? 'block' : 'hidden'} 
+            sm:flex sm:items-center sm:gap-6 text-base font-medium
+          `}
+        >
+          {links.map((path) => (
+            <NavLink
+              key={path}
+              to={path}
+              className={({ isActive }) => `${isActive ? 'text-blue-500' : 'text-black'} block mt-4 sm:mt-0 hover:text-blue-400 transition`}
+            >
+              {path.substring(1).charAt(0).toUpperCase() + path.substring(2)}
+            </NavLink>
+          ))}
         </nav>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Navbar;
-
-// import { NavLink } from 'react-router-dom';
-
-// const Navbar = () => {
-//   return (
-//     <header className="header">
-//       <div>
-//         <NavLink
-//           to="/"
-//           className="text-sm w-10 h-10 mb-4 rounded-lg bg-white items-center justify-center flex font-bold shadow-md border border-blue-300"
-//         >
-//           <div className="col">
-//             <p className="blue-gradient_text">TB</p>
-//           </div>
-//         </NavLink>
-//       </div>
-
-//       <div>
-//         <nav className="flex text-lg gap-7 font-medium">
-//           <NavLink
-//             to="/about"
-//             className={({ isActive }) =>
-//               ${
-//                 isActive ? 'text-blue-500' : 'text-black'
-//               } text-base sm:text-lg md:text-xl
-//             }
-//           >
-//             About
-//           </NavLink>
-//           <NavLink
-//             to="/projects"
-//             className={({ isActive }) =>
-//               ${
-//                 isActive ? 'text-blue-500' : 'text-black'
-//               } text-base sm:text-lg md:text-xl
-//             }
-//           >
-//             Projects
-//           </NavLink>
-//           <NavLink
-//             to="/marketing"
-//             className={({ isActive }) =>
-//               ${
-//                 isActive ? 'text-blue-500' : 'text-black'
-//               } text-base sm:text-lg md:text-xl
-//             }
-//           >
-//             Marketing
-//           </NavLink>
-
-//           <NavLink
-//             to="/acting"
-//             className={({ isActive }) =>
-//               ${
-//                 isActive ? 'text-blue-500' : 'text-black'
-//               } text-base sm:text-lg md:text-xl
-//             }
-//           >
-//             Acting
-//           </NavLink>
-//           <NavLink
-//             to="/contact"
-//             className={({ isActive }) =>
-//               ${
-//                 isActive ? 'text-blue-500' : 'text-black'
-//               } text-base sm:text-lg md:text-xl
-//             }
-//           >
-//             Contact
-//           </NavLink>
-//         </nav>
-//       </div>
-//     </header>
-//   );
-// };
+export default Navbar

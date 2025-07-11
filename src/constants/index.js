@@ -1,16 +1,16 @@
-import daysClip from '../../public/videos/days-of-lives.mp4';
-import escapeTheNight from '../../public/videos/escape-the-night.mp4';
-import popOff from '../../public/videos/pop-off-clip.mp4';
-import criminales from '../../public/videos/criminales.mp4';
-import tupac from '../../public/videos/tupac.mp4';
-import shameless from '../../public/videos/shameless.mp4';
-import codeBlack from '../../public/videos/code-black.mp4';
-import nineOneOne from '../../public/videos/nine-one-one.mp4';
-import virtuallyHeroes from '../../public/videos/virtually-heroes.mp4';
-import beatHerHeart from '../../public/videos/beat-her-heart.mp4';
-import lastLife from '../../public/videos/last-life.mp4';
-import wandaSykes from '../../public/videos/wanda-sykes.mp4';
-import boulevard from '../../public/videos/boulevard.mp4';
+import daysClip from '../videos/days-of-lives.mp4'
+import escapeTheNight from '../videos/escape-the-night.mp4'
+import popOff from '../videos/pop-off-clip.mp4'
+import criminales from '../videos/criminales.mp4'
+import tupac from '../videos/tupac.mp4'
+import shameless from '../videos/shameless.mp4'
+import codeBlack from '../videos/code-black.mp4'
+import nineOneOne from '../videos/nine-one-one.mp4'
+import virtuallyHeroes from '../videos/virtually-heroes.mp4'
+import beatHerHeart from '../videos/beat-her-heart.mp4'
+import lastLife from '../videos/last-life.mp4'
+import wandaSykes from '../videos/wanda-sykes.mp4'
+import boulevard from '../videos/boulevard.mp4'
 
 export const experiences = [
   {
@@ -18,47 +18,22 @@ export const experiences = [
     company_name: 'AthletesTogether',
     date: 'July 2024 - Present',
     points: [
-      'Collaborate with team to plan and execute sprints, ensuring timely completion of development milestones',
-      'Generate innovative ideas and provide input across various business phases, including engineering, sales, design, and overall business strategy',
-      'Assist with documentation and compliance tasks, ensuring all development activities meet regulatory and organizational requirements',
+      'Develop cross-platform mobile apps using React Native, Expo, and React Navigation to deliver seamless, high-quality user experiences.',
+      'Optimize cross-platform consistency and reduce build times by utilizing Expo’s managed workflow.',
+      'Contribute innovative ideas and collaborate across multiple business areas, including engineering, sales, design, and overall strategy.',
+      'Work closely with UI/UX designers and backend developers to implement responsive interfaces and integrate dynamic APIs.',
+      'Use React Hooks for efficient state management, improving app performance and reducing unnecessary re-renders.',
+      'Create advanced animations and gesture interactions using Reanimated and Gesture Handler to enhance UI fluidity and reduce perceived latency.',
     ],
   },
   {
-    title: 'Software Engineer',
+    title: 'Software / Client Solutions Engineer',
     company_name: 'Blindsheep Digital',
-    date: 'May 2024 - Present',
+    date: 'Jan 2024 - Present',
     points: [
-      'Design, develop and maintain responsive and user-friendly websites using WordPress, leveraging themes and custom plugins to meet client requirements and enhance user experience',
-      'Develop and maintained custom WordPress templates with HTML for various page layouts, ensuring consistency across the website',
-      'Integrate HTML code into WordPress to create and modify page elements, such as headers, footers, navigation menus, and widgets',
-
-      ,
-    ],
-  },
-  {
-    title: 'Software Engineer',
-    company_name: 'Go Dutch!',
-    date: 'Oct 2022 - Present',
-    points: [
-      'Orchestrated project development lifecycle overseeing both frontend and backend for mobile application, Go Dutch! from concept to deployment, while maintaining high-quality standards and adherence to project timelines',
-      'Used Figma for design and wireframing of UI/UX, providing a seamless user experience.',
-      'Integrated Google Places API to retrieve local restaurant information, enhancing the app’s utility',
-      'Employed PostgreSQL as the database management system to store and manage data efficiently',
-      'Employed Expo camera for image capture and storage',
-      'Integrated Taggun OCR API for receipt image data processing',
-      'Incorporated a notification system, keeping users updated about their bill splits and payments',
-      'Leveraged various libraries and tools such as React Navigation, Redux Toolkit, Axios, Expo, Formik and more',
-    ],
-  },
-  {
-    title: 'Chief Operating Officer/Co-founder',
-    company_name: 'Breatzke, LLC',
-    date: 'Apr 2018 - Present',
-    points: [
-      'Founded and managed two ecommerce sites with YTD sales exceeding $700,000',
-      'Successfully managed a monthly marketing budget of $5,000, achieving a 150% ROI through targeted campaigns and cost-effective strategies',
-      'Analyzed sales data and implemented inventory optimization strategies, reducing excess stock by 25% while ensuring a 90% product availability rate',
-      'Developed and executed strategic plans resulting in a 15% increase in revenue and a 10% improvement in overall performance metrics',
+      'Design, develop, and maintain responsive, user-friendly websites using WordPress, leveraging themes and custom plugins to meet client requirements and enhance user experience.',
+      'Create and maintain custom WordPress templates using HTML to support various page layouts and ensure consistency across the site for a cohesive brand presentation.',
+      'Integrate HTML into WordPress to create and modify page elements such as headers, footers, navigation menus, and widgets, improving functionality and user engagement.',
     ],
   },
   {
@@ -66,13 +41,60 @@ export const experiences = [
     company_name: 'Aayats',
     date: 'January 2024 - February 2024',
     points: [
-      'Employed Flutter for mobile application design',
-      'Used Figma for design and wireframing of UI/UX, providing a seamless user experience',
-      'Assisted in design and implementation of new features for both iOS and Android platforms',
-      'Collaborated with development team in creation, testing, and maintenance of mobile application',
+      'Developed and deployed high-performance mobile applications using Flutter framework, improving app responsiveness and user satisfaction',
+      'Conducted research and wireframing of UI/UX using Figma, enhancing user experience',
+      'Collaborated with the development team on feature design and implementation for iOS and Android platforms',
     ],
   },
-];
+  {
+    title: 'Executive Assistant – Film & TV Distribution',
+    company_name: 'Joe Patrick Consulting, LLC (TV/Film Distribution)',
+    date: 'Jan 2024 - March 2025',
+    points: [
+      'Provided high-level administrative support to a senior executive in the film/TV distribution industry.',
+      'Developed and maintain comprehensive databases to support strategic decisions, demonstrating strong organizational and analytical skills.',
+      'Streamlined administrative processes, improving efficiency in distribution operations.',
+      'Coordinated complex schedules and manage communications across global time zones.',
+    ],
+  },
+
+  {
+    title: 'Founding Software Engineer',
+    company_name: 'Go Dutch!',
+    date: 'Jan 2023 - May 2024',
+    points: [
+      'Led full project development lifecycle from concept to deployment, delivering complex projects on time.',
+      'Integrated APIs to enhance app functionality, improving user engagement and adapting to email marketing platform requirements.',
+      'Leveraged libraries and tools including React Navigation, Redux Toolkit, Axios, Expo, and Formik.',
+      'Integrated Google Places API to retrieve local restaurant information, enhancing app utility.',
+      'Designed and implemented a notification system using libraries like React Navigation and Redux.',
+      'Managed data efficiently with PostgreSQL, applying data management skills relevant to email marketing databases.',
+    ],
+  },
+  {
+    title: 'Email Marketing Specialist',
+    company_name: 'OMG Sportswear USA',
+    date: 'Apr 2021 - Jan 2024',
+    points: [
+      'Developed, executed, and maintained targeted email and SMS campaigns using Klaviyo’s drag-and-drop editor and HTML/CSS, ensuring consistent brand messaging and design that enhanced brand recognition.',
+      'Utilized advanced segmentation and personalization features to deliver customized email content, improving engagement and customer retention.',
+      'Created and managed automated email workflows for customer lifecycle marketing, including welcome series, cart abandonment, and post-purchase follow-ups.',
+      'Conducted A/B testing on automations to improve engagement and open rates for SMS and email campaigns, resulting in higher customer interaction.',
+      'Managed and optimized Google Ads campaigns to drive targeted traffic and increase conversions, successfully integrating paid search strategies with email marketing efforts.',
+    ],
+  },
+  {
+    title: 'COO / Digital Marketing Specialist',
+    company_name: 'Circuit Rave Gear',
+    date: 'Dec 2018 - Dec 2021',
+    points: [
+      'Founded and managed two eCommerce sites, achieving over $700,000 in sales year-to-date.',
+      'Executed, monitored, and analyzed email campaign performance, leading to improved open rates, click-through rates, conversion rates, and ROI.',
+      'Developed engaging, targeted email and SMS campaigns using Klaviyo’s drag-and-drop editor and HTML/CSS, enhancing customer engagement and retention.',
+      'Leveraged data insights to make informed recommendations for campaign improvements, resulting in more effective marketing strategies.',
+    ],
+  },
+]
 
 export const projects = [
   {
@@ -95,25 +117,31 @@ export const projects = [
     theme: 'btn-back-pink',
     name: 'Save the Universe! Game',
     description:
-      'Save the Universeis an engaging and interactive web application game in which you embark on an epic mission to defend the universe aganinst an incoming alien invasion. This web application boasts a lively and vibrant user interface ensuring an enjoyable and immersive gaming experience.',
+      'Save the Universe is an engaging and interactive web application game in which you embark on an epic mission to defend the universe aganinst an incoming alien invasion. This web application boasts a lively and vibrant user interface ensuring an enjoyable and immersive gaming experience.',
     link: 'https://sba-308-h-save-the-universe.vercel.app',
     gitHubLink: 'https://github.com/TheoBreaux/SBA_308H_Save_the_Universe',
   },
-];
+]
 
 export const education = [
-  {
-    institution: 'Western Governors University',
-    location: 'Remote',
-    certification:
-      'Bachelor of Science in Software Engineering (Expected 2025)',
-    points: [],
-  },
   {
     institution: 'Lake Forest College ',
     location: 'Lake Forest, IL',
     certification: 'Bachelor of Arts in Marketing/Advertising',
-    points: [],
+    points: ['Honors Graduate'],
+  },
+  {
+    institution: 'Calbright College ',
+    location: 'Remote',
+    certification: 'Certificate of Competency in Data Analytics',
+  },
+  {
+    institution: 'Meta',
+    location: 'Remote',
+    certification: 'Front-End Developer Certification',
+    points: [
+      'Completed comprehensive job-ready training in front-end development, covering HTML, CSS, JavaScript, React, version control, and UI/UX design principles. Gained proficiency in creating responsive and interactive web applications, implementing modern frameworks, optimizing website performance, and adhering to best practices in web accessibility and cross-browser compatibility. Developed skills in problem-solving, debugging, and collaborating on software projects using industry-standard tools and workflows',
+    ],
   },
 
   {
@@ -126,9 +154,11 @@ export const education = [
     institution: 'Google/Coursera',
     location: 'Remote',
     certification: 'Google Data Analytics Specialization',
-    points: [],
+    points: [
+      'Completed extensive job-ready training in data analytics encompassing data analysis, data cleaning, data visualization, R Programming, calculations and analysis in SQL and spreadsheets, allowing for data-driven decision making, and the interpretation and communicating of data analytics findings through effective presentations.',
+    ],
   },
-];
+]
 
 export const videoClips = {
   daysClip: daysClip,
@@ -144,7 +174,7 @@ export const videoClips = {
   lastLife: lastLife,
   wandaSykes: wandaSykes,
   boulevard: boulevard,
-};
+}
 
 export const televisionActingRoles = [
   {
@@ -284,7 +314,7 @@ export const televisionActingRoles = [
   },
 
   ,
-];
+]
 
 export const filmActingRoles = [
   {
@@ -354,7 +384,7 @@ export const filmActingRoles = [
     productionCompany: '319 Prod.',
     clipName: '',
   },
-];
+]
 
 export const theaterActingRoles = [
   {
@@ -399,4 +429,4 @@ export const theaterActingRoles = [
     productionCompany: 'Lake Forest College',
     clipName: '',
   },
-];
+]

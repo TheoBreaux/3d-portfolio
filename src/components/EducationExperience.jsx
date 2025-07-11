@@ -8,7 +8,7 @@ const EducationExperience = ({ education }) => {
   }, []);
 
   return (
-    <div className='mt-5'>
+    <div className="mt-5">
       <h3 className="text-black text-xl font-semibold">
         {education.institution}
       </h3>
@@ -17,6 +17,12 @@ const EducationExperience = ({ education }) => {
       </p>
       <p className="text-black-500 font-medium font-base">
         {education.certification}
+      </p>
+      <p className=" text-slate-500 font-medium font-base">
+        <span className="font-bold text-xl blue-gradient_text drop-shadow">
+          Achievements:{' '}
+        </span>{' '}
+        {education.points}
       </p>
       <hr className="mt-5 shadow-lg" />
     </div>

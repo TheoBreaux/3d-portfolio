@@ -15,7 +15,7 @@ const Navbar = () => {
       </div>
 
       <div>
-        <nav className="flex text-lg gap-6 font-medium">
+        <nav className="flex text-lg gap-4 font-medium">
           {['/about', '/projects', '/marketing', '/acting', '/contact'].map(
             (path) => (
               <NavLink

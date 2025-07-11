@@ -1,27 +1,27 @@
-import { useState, useRef, Suspense } from "react";
-import emailjs from "@emailjs/browser";
-import { Canvas } from "@react-three/fiber";
-import Fox from "../models/Fox";
-import Loader from "../components/Loader";
-import useAlert from "../hooks/useAlert";
-import Alert from "../components/Alert";
+import { useState, useRef, Suspense } from 'react'
+import emailjs from '@emailjs/browser'
+import { Canvas } from '@react-three/fiber'
+import Fox from '../models/Fox'
+import Loader from '../components/Loader'
+import useAlert from '../hooks/useAlert'
+import Alert from '../components/Alert'
 
 const Contact = () => {
-  const formRef = useRef(null);
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
-  const [isLoading, setIsLoading] = useState(false);
-  const [currentAnimation, setCurrentAnimation] = useState("idle");
+  const formRef = useRef(null)
+  const [form, setForm] = useState({ name: '', email: '', message: '' })
+  const [isLoading, setIsLoading] = useState(false)
+  const [currentAnimation, setCurrentAnimation] = useState('idle')
 
-  const { alert, showAlert, hideAlert } = useAlert();
+  const { alert, showAlert, hideAlert } = useAlert()
 
   const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
+    setForm({ ...form, [e.target.name]: e.target.value })
+  }
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsLoading(true);
-    setCurrentAnimation("hit");
+    e.preventDefault()
+    setIsLoading(true)
+    setCurrentAnimation('hit')
 
     emailjs
       .send(
@@ -29,50 +29,46 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "Theo Breaux",
-
+          to_name: 'Theo Breaux',
           from_email: form.email,
-          to_email: "theobreaux@gmail.com",
+          to_email: 'theobreaux@gmail.com',
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
-      .then(() => {
-        setIsLoading(false);
-        //TODO: Show success message
+      .then((result) => {
+        console.log('Email sent:', result.text)
+        setIsLoading(false)
         showAlert({
           show: true,
-          text: "Message sent successfully",
-          type: "success",
-        });
-        //TODO: Hide an alert
-
+          text: 'Message sent successfully',
+          type: 'success',
+        })
         setTimeout(() => {
-          hideAlert;
-          setCurrentAnimation("idle");
-          setForm({ name: "", email: "", message: "" });
-        }, 3000);
+          hideAlert()
+          setCurrentAnimation('idle')
+          setForm({ name: '', email: '', message: '' })
+        }, 3000)
       })
       .catch((error) => {
-        setIsLoading(false);
-        setCurrentAnimation("idle");
-        console.log(error);
-        //TODO: Show error message
+        console.error('Email error:', error)
+        setIsLoading(false)
+        setCurrentAnimation('idle')
         showAlert({
           show: true,
-          text: "I didnt send the message, try again later.",
-          type: "danger",
-        });
-      });
-  };
+          text: 'I didnt send the message, try again later.',
+          type: 'danger',
+        })
+      })
+  }
 
   const handleFocus = () => {
-    setCurrentAnimation("walk");
-  };
+    setCurrentAnimation('walk')
+  }
 
   const handleBlur = () => {
-    setCurrentAnimation("idle");
-  };
+    setCurrentAnimation('idle')
+  }
 
   return (
     <section className="relative flex lg:flex-row flex-col max-container h-[100vh]">
@@ -133,7 +129,7 @@ const Contact = () => {
             onFocus={handleFocus}
             onBlur={handleBlur}
           >
-            {isLoading ? "Sending..." : "Send Message"}
+            {isLoading ? 'Sending...' : 'Send Message'}
           </button>
         </form>
       </div>
@@ -147,7 +143,10 @@ const Contact = () => {
             far: 1000,
           }}
         >
-          <directionalLight intensity={2.5} position={[0, 0, 1]} />
+          <directionalLight
+            intensity={2.5}
+            position={[0, 0, 1]}
+          />
           <ambientLight intensity={0.5} />
           <Suspense fallback={<Loader />}>
             <Fox
@@ -160,7 +159,7 @@ const Contact = () => {
         </Canvas>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

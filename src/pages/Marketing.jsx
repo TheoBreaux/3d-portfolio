@@ -8,8 +8,8 @@ import OMGMobile2 from '../assets/images/omg-mobile-2.png';
 import OMGMobile3 from '../assets/images/omg-mobile-3.png';
 import Circuit1 from '../assets/images/circuit-mobile.png';
 import Circuit2 from '../assets/images/circuit-mobile-2.png';
-import OMGVideo from '../../public/videos/omg-mobile-recording.mp4';
-import DailyGiftyVideo from '../../public/videos/daily-gifty-recording.mp4';
+import OMGVideo from '../videos/omg-mobile-recording.mp4';
+import DailyGiftyVideo from '../videos/daily-gifty-recording.mp4';
 
 const Marketing = () => {
   const navigate = useNavigate();
@@ -20,7 +20,7 @@ const Marketing = () => {
 
   return (
     <section className="max-container">
-      <h1 className="head-text">
+      <h1 className="text-2xl">
         Digital{' '}
         <span className="blue-gradient_text font-semibold drop-shadow">
           Marketing Portfolio

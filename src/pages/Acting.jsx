@@ -1,37 +1,31 @@
-import Headshot1 from '../assets/images/headshot-center.jpg';
-import Reel from '../../public/videos/theo-breaux-reel.mp4';
-import MZALOGO from '../assets/images/mza-logo.png';
-import ROBBLOGO from '../assets/images/robb-logo.png';
-import { actorImages } from '../pages/index.js';
-import { useNavigate } from 'react-router-dom';
-import {
-  filmActingRoles,
-  televisionActingRoles,
-  theaterActingRoles,
-} from '../constants';
-import CTA from '../components/CTA.jsx';
-import ActingCredit from '../components/ActingCredit.jsx';
-import InstagramIcon from '../assets/icons/instagram-icon.svg';
-import FacebookIcon from '../assets/icons/facebook-icon.svg';
-import Email from '../assets/icons/email.svg';
-import Phone from '../assets/icons/phone-solid.svg';
-import Resume from '../assets/icons/file-solid.svg';
+import Headshot1 from '../assets/images/headshot-center.jpg'
+import Reel from '../videos/theo-breaux-reel.mp4'
+import MZALOGO from '../assets/images/mza-logo.png'
+import ROBBLOGO from '../assets/images/robb-logo.png'
+import PodcastLogo from '../assets/images/ynmtb-logo.png'
+import { actorImages } from '../pages/index.js'
+import { useNavigate } from 'react-router-dom'
+import { filmActingRoles, televisionActingRoles, theaterActingRoles } from '../constants'
+import CTA from '../components/CTA.jsx'
+import ActingCredit from '../components/ActingCredit.jsx'
+import InstagramIcon from '../assets/icons/instagram-icon.svg'
+import FacebookIcon from '../assets/icons/facebook-icon.svg'
+import Email from '../assets/icons/email.svg'
+import Phone from '../assets/icons/phone-solid.svg'
+import Resume from '../assets/icons/file-solid.svg'
 
 const Acting = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   const handleImageClick = (imageName) => {
-    navigate(`/image/${imageName}`);
-  };
+    navigate(`/image/${imageName}`)
+  }
 
   return (
     <section className="max-container">
-      <div className="flex items-center">
+      <div className="flex items-center justify-center space-x-4">
         <h1 className="acting-head-text">
-          Theo{' '}
-          <span className="blue-gradient_text font-semibold drop-shadow">
-            Breaux
-          </span>
+          Theo <span className="blue-gradient_text font-semibold drop-shadow">Breaux</span>
         </h1>
         <a
           href="https://www.instagram.com/theobreaux/"
@@ -75,8 +69,9 @@ const Acting = () => {
         alt="Headshot 5"
       />
 
-      <div className="representation-container">
-        <div className="representative">
+      <div className="representation-container w-full max-w-5xl mx-auto flex justify-center space-x-10">
+        {/* Representative Info */}
+        <div className="representative w-64">
           <a
             href="https://www.mza.agency/"
             target="_blank"
@@ -115,7 +110,43 @@ const Acting = () => {
           </div>
         </div>
 
-        <div className="representative">
+        {/* Podcast Section */}
+        <div className="podcast-section flex items-center space-x-4 w-auto">
+          <a
+            href="https://youtube.com/@yourenotmytypebro"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={PodcastLogo}
+              alt="Theo Breaux Podcast Logo"
+              className="w-32 h-32 object-contain cursor-pointer"
+            />
+          </a>
+
+          <div className="flex flex-col">
+            <a
+              href="https://youtube.com/@yourenotmytypebro"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-2xl font-semibold text-blue-600 hover:underline"
+            >
+              You're Not My Type, Bro!
+            </a>
+            <a
+              href="https://youtube.com/@yourenotmytypebro"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl text-gray-500 hover:underline"
+            >
+              Listen & Subscribe
+            </a>
+          </div>
+        </div>
+
+        {/* Uncomment this block if you want to add the second representative */}
+
+        <div className="representative w-64">
           <a
             href="http://therobbcompany.com/home.html"
             target="_blank"
@@ -130,7 +161,7 @@ const Acting = () => {
             </div>
           </a>
 
-          <p className="representative-name">Sherry Robb</p>
+          {/* <p className="representative-name">Sherry Robb</p>
           <div className="flex items-center">
             <img
               className="phone-icon"
@@ -138,10 +169,10 @@ const Acting = () => {
               alt="phone Icon"
             />
             <p className="representative-text">818.384.0848</p>
-          </div>
+          </div> */}
           <div className="flex items-center">
             <a
-              href="mailto: sherry@therobbcompany.com"
+              href="mailto: therobbcompany@gmail.com"
               className="representative-text"
             >
               <img
@@ -186,32 +217,23 @@ const Acting = () => {
 
       <div className="flex flex-col justify-center mt-5">
         <h1 className="text-4xl font-bold text-left m-0 p-0">
-          Television{' '}
-          <span className="blue-gradient_text font-semibold drop-shadow">
-            Projects
-          </span>
+          Television <span className="blue-gradient_text font-semibold drop-shadow">Projects</span>
         </h1>
         {televisionActingRoles.map((role) => {
-          return <ActingCredit role={role} />;
+          return <ActingCredit role={role} />
         })}
 
         <h1 className="text-4xl font-bold text-left mt-4">
-          Film{' '}
-          <span className="blue-gradient_text font-semibold drop-shadow">
-            Projects
-          </span>
+          Film <span className="blue-gradient_text font-semibold drop-shadow">Projects</span>
         </h1>
         {filmActingRoles.map((role) => {
-          return <ActingCredit role={role} />;
+          return <ActingCredit role={role} />
         })}
         <h1 className="text-4xl font-bold text-left mt-4">
-          Theater{' '}
-          <span className="blue-gradient_text font-semibold drop-shadow">
-            Projects
-          </span>
+          Theater <span className="blue-gradient_text font-semibold drop-shadow">Projects</span>
         </h1>
         {theaterActingRoles.map((role) => {
-          return <ActingCredit role={role} />;
+          return <ActingCredit role={role} />
         })}
       </div>
       {/* <div className="flex justify-center mt-5">
@@ -227,7 +249,7 @@ const Acting = () => {
 
       <CTA />
     </section>
-  );
-};
+  )
+}
 
-export default Acting;
+export default Acting

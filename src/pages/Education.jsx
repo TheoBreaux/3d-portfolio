@@ -13,14 +13,11 @@ const Education = () => {
       <div className="flex flex-col gap-3 text-slate-500">
         <p>
           During the COVID-19 pandemic, I transitioned from the hospitality and
-          entertainment industries to the tech field. I began with the Google
+          entertainment industries into the tech industry. I began with the Google
           Data Analytics Specialization on Coursera, where I discovered my
           passion for programming through the R Programming language. This
           interest propelled me into learning JavaScript, HTML, and CSS,
-          deepening my commitment to software development. Currently, I am
-          pursuing a second bachelor's degree in Software Engineering at Western
-          Governors University. I also hold a B.A. in Marketing/Advertising from
-          Lake Forest College.
+          deepening my commitment to software development.
         </p>
       </div>
 

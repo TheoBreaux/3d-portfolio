@@ -3,7 +3,7 @@ import HeadShot from '../assets/images/hero-image.png'
 
 const Home = () => {
   return (
-    <section >
+    <section className="absolute top-10 left-0 right-0 px-4 sm:px-8 lg:px-20 mx-auto max-w-6xl">
       <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center flex-col space-y-8">
         {/* Hero Section */}
         <div className="text-center max-w-2xl">

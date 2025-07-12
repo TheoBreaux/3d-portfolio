@@ -17,7 +17,7 @@ const Acting = () => {
   }
 
   return (
-    <section className="absolute top-28 left-0 right-0 px-4 sm:px-8 lg:px-20 mx-auto max-w-6xl overflow-x-hidden">
+    <section className="absolute top-40 left-0 right-0 px-4 sm:px-8 lg:px-20 mx-auto max-w-6xl overflow-x-hidden">
       <img
         src={Headshot1}
         className="w-screen h-auto"

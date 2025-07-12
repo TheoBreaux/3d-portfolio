@@ -19,7 +19,7 @@ const Marketing = () => {
   }
 
   return (
-    <section className="absolute top-28 left-0 right-0 px-4 sm:px-8 lg:px-20 mx-auto max-w-6xl">
+    <section className="absolute top-40 left-0 right-0 px-4 sm:px-8 lg:px-20 mx-auto max-w-6xl overflow-x-hidden">
       <h1 className="text-2xl">
         Digital <span className="blue-gradient_text font-semibold drop-shadow">Marketing Portfolio</span>
       </h1>

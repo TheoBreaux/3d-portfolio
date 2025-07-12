@@ -8,11 +8,8 @@ import { useNavigate } from 'react-router-dom'
 import { filmActingRoles, televisionActingRoles, theaterActingRoles } from '../constants'
 import CTA from '../components/CTA.jsx'
 import ActingCredit from '../components/ActingCredit.jsx'
-import InstagramIcon from '../assets/icons/instagram-icon.svg'
-import FacebookIcon from '../assets/icons/facebook-icon.svg'
 import Email from '../assets/icons/email.svg'
 import Phone from '../assets/icons/phone-solid.svg'
-import Resume from '../assets/icons/file-solid.svg'
 
 const Acting = () => {
   const navigate = useNavigate()
@@ -23,46 +20,6 @@ const Acting = () => {
 
   return (
     <section className="absolute top-28 left-0 right-0 px-4 sm:px-8 lg:px-20 mx-auto max-w-6xl">
-      <div className="flex items-center justify-center space-x-4">
-        <h1 className="acting-head-text">
-          Theo <span className="blue-gradient_text font-semibold drop-shadow">Breaux</span>
-        </h1>
-        <a
-          href="https://www.instagram.com/theobreaux/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            className="insta-icon"
-            src={InstagramIcon}
-            alt="Instagram Icon"
-          />
-        </a>
-        <a
-          href="https://www.facebook.com/BreauxTheo/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            className="insta-icon"
-            src={FacebookIcon}
-            alt="facebook Icon"
-          />
-        </a>
-        <a
-          href="../../public/files/acting-resume.pdf"
-          download
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            className="insta-icon"
-            src={Resume}
-            alt="file Icon"
-          />
-        </a>
-      </div>
-
       <img
         src={Headshot1}
         className="w-screen h-auto"
@@ -179,6 +136,18 @@ const Acting = () => {
         </div>
       </div>
 
+      <div className="mt-5 flex flex-col">
+        <div className="flex flex-col items-center justify-center">
+          <video
+            controls
+            autoPlay
+            width="100%"
+            className="video-reel-player"
+            src={Reel}
+          ></video>
+        </div>
+      </div>
+
       <div className="flex">
         {Object.keys(actorImages).map((imageName) => (
           <div
@@ -218,17 +187,6 @@ const Acting = () => {
           return <ActingCredit role={role} />
         })}
       </div>
-      {/* <div className="flex justify-center mt-5">
-        <p className="cta-text">Resume</p>
-        <a
-          href="../../public/acting-resume.pdf"
-          download
-          className="btn"
-        >
-          Download
-        </a>
-      </div> */}
-
       <CTA />
     </section>
   )

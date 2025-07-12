@@ -17,47 +17,7 @@ const Projects = () => {
           industries, which imbues me with a unique perspective to my work.
         </p>
       </div>
-      <div className="flex flex-wrap my-20 gap-16">
-        <div className="lg:w-[400px] w-full">
-          <div className="block-container w-12 h-12">
-            <div className={`btn-back rounded-xl btn-back-red`} />
-          </div>
-          <div className="mt-1 flex flex-col">
-            <h4 className="text-2xl font-bold">Go Dutch!</h4>
-            <p className="mt-2 text-slate-500">
-              Go Dutch! is an interactive, collaborative dining bill-splitting, mobile application that streamlines the process of dividing restaurant
-              expenses among friends. Go Dutch! seamlessly parses receipts, adds diners, and distributes costs effortlessly. The intuitive interface
-              offers special features like birthday bill-sharing and payment notification requests. Elevate your dining experience and impress your
-              friends with our professional-grade app!
-            </p>
-            <div className="mt-1 flex items-center gap-2 font-bold">
-              <div className="flex">
-                <div className="flex items-center mr-2">
-                  <Link
-                    to="https://github.com/TheoBreaux/go-dutch-react-native"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-semibold text-blue-600"
-                  >
-                    <FaGithub size={30} />
-                  </Link>
-                </div>
-
-                <div className="flex items-center">
-                  <NavLink
-                    to="/godutchapp"
-                    className="font-semibold text-blue-600"
-                  >
-                    <FaLink size={30} />
-                  </NavLink>
-
-                  {/* </NavLink> */}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
+      <div className="flex flex-col my-20 gap-16">
         {projects.map((project) => (
           <div
             className="w-full lg:flex-1"

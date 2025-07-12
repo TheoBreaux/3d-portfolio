@@ -8,8 +8,6 @@ import { useNavigate } from 'react-router-dom'
 import { filmActingRoles, televisionActingRoles, theaterActingRoles } from '../constants'
 import CTA from '../components/CTA.jsx'
 import ActingCredit from '../components/ActingCredit.jsx'
-import Email from '../assets/icons/email.svg'
-import Phone from '../assets/icons/phone-solid.svg'
 
 const Acting = () => {
   const navigate = useNavigate()
@@ -19,7 +17,7 @@ const Acting = () => {
   }
 
   return (
-    <section className="absolute top-28 left-0 right-0 px-4 sm:px-8 lg:px-20 mx-auto max-w-6xl">
+    <section className="absolute top-28 left-0 right-0 px-4 sm:px-8 lg:px-20 mx-auto max-w-6xl overflow-x-hidden">
       <img
         src={Headshot1}
         className="w-screen h-auto"
@@ -62,7 +60,7 @@ const Acting = () => {
         </div>
 
         {/* Podcast Section */}
-        <div className="podcast-section flex flex-col sm:flex-row items-center mb-4 sm:space-y-0 sm:space-x- w-auto max-w-xs sm:max-w-sm">
+        <div className="representative w-64 sm:w-56 xs:w-48 flex-shrink-0">
           <a
             href="https://youtube.com/@yourenotmytypebro"
             target="_blank"
@@ -71,30 +69,11 @@ const Acting = () => {
             <img
               src={PodcastLogo}
               alt="Theo Breaux Podcast Logo"
-              className="w-16 sm:w-20 h-auto object-contain cursor-pointer"
+              className="representative-logo w-full h-auto max-h-24 object-contain"
             />
           </a>
 
-          <div className="flex flex-col items-center sm:items-start">
-            <a
-              href="https://youtube.com/@yourenotmytypebro"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-lg sm:text-xl font-semibold text-blue-600 hover:underline text-center sm:text-left"
-            >
-              <p>
-                You're Not <span className="blue-gradient_text font-semibold drop-shadow">My Type, Bro!</span>
-              </p>
-            </a>
-            <a
-              href="https://youtube.com/@yourenotmytypebro"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm sm:text-lg font-bold text-gray-500 hover:underline text-center sm:text-left"
-            >
-              Watch, Listen & Subscribe
-            </a>
-          </div>
+          <div className="flex flex-col items-center sm:items-start"></div>
         </div>
       </div>
 

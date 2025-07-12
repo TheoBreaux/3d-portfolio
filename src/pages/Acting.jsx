@@ -42,30 +42,6 @@ const Acting = () => {
               />
             </div>
           </a>
-          <p className="representative-name text-lg sm:text-base xs:text-sm whitespace-nowrap">Michael Zanuck</p>
-
-          <div className="flex items-center space-x-2">
-            <img
-              className="phone-icon w-5 h-5"
-              src={Phone}
-              alt="phone Icon"
-            />
-            <p className="representative-text text-sm sm:text-xs">818.707.9747</p>
-          </div>
-
-          <div className="flex items-center">
-            <a
-              href="mailto:audition@mzaagency.com"
-              className="representative-text text-sm sm:text-xs flex items-center space-x-1"
-            >
-              <img
-                className="email-icon w-5 h-5"
-                src={Email}
-                alt="email Icon"
-              />
-              <span className="sr-only">Email</span>
-            </a>
-          </div>
         </div>
 
         {/* Second Representative */}
@@ -83,20 +59,6 @@ const Acting = () => {
               />
             </div>
           </a>
-
-          <div className="flex items-center mt-1">
-            <a
-              href="mailto:therobbcompany@gmail.com"
-              className="representative-text text-sm sm:text-xs flex items-center space-x-1"
-            >
-              <img
-                className="email-icon w-5 h-5"
-                src={Email}
-                alt="email Icon"
-              />
-              <span className="sr-only">Email</span>
-            </a>
-          </div>
         </div>
 
         {/* Podcast Section */}
